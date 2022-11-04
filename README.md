@@ -47,7 +47,7 @@ Implement a neural network that predicts intents and slots in a multitask learni
 
 - [x] prepare validation dataset for ATIS (since only SNIPS has it) - ~10% of the train but intents with only one instance remain in training
 
-- [ ] implement baseline methods
+- [x] implement baseline methods
 
 - [ ] implement architectures from scratch (PyTorch)
 

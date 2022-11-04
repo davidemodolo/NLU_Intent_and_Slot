@@ -9,12 +9,14 @@
 Intent classification is a text classification task in which the objective is to assign an intent for a given sentence or utterance.
 
 > _Utterance_: Can you help me find out about flights?
+
 > _Intent_: InfoRequest
 
 ### Slot Filling (Slot F1)
 Slot filling is a sequence labelling task where the objective is to map a given sentence or utterance to a sequence of domain-slot labels.
 
 > _Utterance_: I want to travel from nashville to tacoma
+
 > _Concepts_: O O O O O B-fromloc.city_name O B-toloc.city_name
 
 ## Task
@@ -31,10 +33,26 @@ Implement a neural network that predicts intents and slots in a multitask learni
 
 - SNIPS -> Slot F1: 80.0%, Intent Acc.: 96.0%
 
-**TO DO**:
+**PROJECT TODO**:
 
 1. Implement baseline methods
 
 2. Build different architectures (Seq2Seq, Bi-LSTM + CRF, etc.)
 
 3. Try to use pre-trained models (e.g. BERT, GPT2, T5, etc.)
+
+**MY TODO**:
+
+- [x] download and import datasets
+
+- [x] prepare validation dataset for ATIS (since only SNIPS has it)
+
+- [ ] implement baseline methods
+
+- [ ] implement architectures from scratch (PyTorch)
+
+- [ ] implement pre-trained models (TensorFlow)
+
+- [ ] data visualization
+
+- [ ] write paper

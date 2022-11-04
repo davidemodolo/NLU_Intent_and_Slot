@@ -1,0 +1,2987 @@
+[
+    {
+        "utterance": "all flights from boston to washington dc on november eleventh",
+        "slots": "O O O B-fromloc.city_name O B-toloc.city_name B-toloc.state_code O B-depart_date.month_name B-depart_date.day_number",
+        "intent": "flight"
+    },
+    {
+        "utterance": "give me the flights from kansas city to chicago leaving next wednesday arriving at chicago at about 7 pm",
+        "slots": "O O O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O B-depart_date.date_relative B-depart_date.day_name O O B-toloc.city_name O B-arrive_time.time_relative B-arrive_time.time I-arrive_time.time",
+        "intent": "flight"
+    },
+    {
+        "utterance": "show me the flights from philadelphia to baltimore",
+        "slots": "O O O O O B-fromloc.city_name O B-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "show me all flights from philadelphia to atlanta that leave after 5 pm on wednesday",
+        "slots": "O O O O O B-fromloc.city_name O B-toloc.city_name O O B-depart_time.time_relative B-depart_time.time I-depart_time.time O B-depart_date.day_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "all flights from san francisco to boston leaving before noon",
+        "slots": "O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O B-depart_time.time_relative B-depart_time.time",
+        "intent": "flight"
+    },
+    {
+        "utterance": "what ground transportation is available at boston",
+        "slots": "O O O O O O B-city_name",
+        "intent": "ground_service"
+    },
+    {
+        "utterance": "flights from pittsburgh to baltimore between 10 am and 2 pm",
+        "slots": "O O B-fromloc.city_name O B-toloc.city_name O B-depart_time.start_time I-depart_time.start_time O B-depart_time.end_time I-depart_time.end_time",
+        "intent": "flight"
+    },
+    {
+        "utterance": "show me all flights from san diego to miami with a stop in denver",
+        "slots": "O O O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O O O O B-stoploc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "all right give me the flight times in the morning on september twentieth from pittsburgh to san francisco",
+        "slots": "O O O O O B-flight_time I-flight_time O O B-depart_time.period_of_day O B-depart_date.month_name B-depart_date.day_number O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name",
+        "intent": "flight_time"
+    },
+    {
+        "utterance": "what does the fare code yn mean",
+        "slots": "O O O O O B-fare_basis_code O",
+        "intent": "abbreviation"
+    },
+    {
+        "utterance": "what night flight do you have from san francisco to denver on united on the evening of august twenty seventh",
+        "slots": "O B-depart_time.period_of_day O O O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O B-airline_name O O B-depart_time.period_of_day O B-depart_date.month_name B-depart_date.day_number I-depart_date.day_number",
+        "intent": "flight"
+    },
+    {
+        "utterance": "what airlines fly from st. petersburg to milwaukee and from milwaukee to tacoma",
+        "slots": "O O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O O B-fromloc.city_name O B-toloc.city_name",
+        "intent": "airline"
+    },
+    {
+        "utterance": "give me flights from pittsburgh to baltimore",
+        "slots": "O O O O B-fromloc.city_name O B-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "what are the flights from orlando to cleveland on us air that arrive around 10 pm",
+        "slots": "O O O O O B-fromloc.city_name O B-toloc.city_name O B-airline_name I-airline_name O O B-arrive_time.time_relative B-arrive_time.time I-arrive_time.time",
+        "intent": "flight"
+    },
+    {
+        "utterance": "show me the flights from boston to denver",
+        "slots": "O O O O O B-fromloc.city_name O B-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "what are the first class fares from dallas to baltimore",
+        "slots": "O O O B-class_type I-class_type O O B-fromloc.city_name O B-toloc.city_name",
+        "intent": "airfare"
+    },
+    {
+        "utterance": "i want to fly from miami to chicago on american airlines and arrive at around 5 o'clock in the afternoon show me all flights",
+        "slots": "O O O O O B-fromloc.city_name O B-toloc.city_name O B-airline_name I-airline_name O O O B-arrive_time.time_relative B-arrive_time.time I-arrive_time.time O O B-arrive_time.period_of_day O O O O",
+        "intent": "flight"
+    },
+    {
+        "utterance": "what ground transportation is available from pittsburgh to downtown",
+        "slots": "O O O O O O B-fromloc.city_name O O",
+        "intent": "ground_service"
+    },
+    {
+        "utterance": "please show me airlines with flights from philadelphia to dallas",
+        "slots": "O O O O O O O B-fromloc.city_name O B-toloc.city_name",
+        "intent": "airline"
+    },
+    {
+        "utterance": "what is the least expensive fare from baltimore to san francisco leaving on september thirtieth",
+        "slots": "O O O B-cost_relative I-cost_relative O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O B-depart_date.month_name B-depart_date.day_number",
+        "intent": "airfare"
+    },
+    {
+        "utterance": "is there an airline that services boston dc and dallas",
+        "slots": "O O O O O O B-fromloc.city_name B-fromloc.state_code O B-fromloc.city_name",
+        "intent": "airline"
+    },
+    {
+        "utterance": "i 'd like to see the flights from atlanta to washington dc",
+        "slots": "O O O O O O O O B-fromloc.city_name O B-toloc.city_name B-toloc.state_code",
+        "intent": "flight"
+    },
+    {
+        "utterance": "what does restriction ap 57 mean",
+        "slots": "O O O B-restriction_code I-restriction_code O",
+        "intent": "abbreviation"
+    },
+    {
+        "utterance": "what is the cheapest flight from long beach to memphis",
+        "slots": "O O O B-cost_relative O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "what is the first class fare from indianapolis to orlando",
+        "slots": "O O O B-class_type I-class_type O O B-fromloc.city_name O B-toloc.city_name",
+        "intent": "airfare"
+    },
+    {
+        "utterance": "all flights from pittsburgh to philadelphia",
+        "slots": "O O O B-fromloc.city_name O B-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "what is the fare on the thrift economy flight from boston to san francisco",
+        "slots": "O O O O O O B-class_type B-economy O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name",
+        "intent": "airfare"
+    },
+    {
+        "utterance": "what flights are available from boston to dallas",
+        "slots": "O O O O O B-fromloc.city_name O B-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "what is fare code f",
+        "slots": "O O O O B-fare_basis_code",
+        "intent": "abbreviation"
+    },
+    {
+        "utterance": "pittsburgh to boston saturday",
+        "slots": "B-fromloc.city_name O B-toloc.city_name B-depart_date.day_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "are there any other cities that i can fly from boston to dallas through that i can get a flight earlier than 1017 in the morning",
+        "slots": "O O O O O O O O O O B-fromloc.city_name O B-toloc.city_name O O O O O O O B-depart_time.time_relative O B-depart_time.time O O B-depart_time.period_of_day",
+        "intent": "city"
+    },
+    {
+        "utterance": "give me the flights from phoenix to milwaukee on wednesday",
+        "slots": "O O O O O B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "show me all flights from pittsburgh to baltimore",
+        "slots": "O O O O O B-fromloc.city_name O B-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "what kind of ground transportation is there in dallas",
+        "slots": "O O O O O O O O B-city_name",
+        "intent": "ground_service"
+    },
+    {
+        "utterance": "what flights leave pittsburgh july fifth after 7 pm and arrive in san francisco",
+        "slots": "O O O B-fromloc.city_name B-depart_date.month_name B-depart_date.day_number B-depart_time.time_relative B-depart_time.time I-depart_time.time O O O B-toloc.city_name I-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "show me one way flights from milwaukee to orlando",
+        "slots": "O O B-round_trip I-round_trip O O B-fromloc.city_name O B-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "what flights from atlanta to toronto",
+        "slots": "O O O B-fromloc.city_name O B-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "i want to go and take a plane in atlanta and fly to boston",
+        "slots": "O O O O O O O O O B-fromloc.city_name O O O B-toloc.city_name",
+        "intent": "aircraft"
+    },
+    {
+        "utterance": "which flights from memphis to tacoma also stop in los angeles",
+        "slots": "O O O B-fromloc.city_name O B-toloc.city_name O O O B-stoploc.city_name I-stoploc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "need an inexpensive flight from baltimore to san francisco",
+        "slots": "O O B-flight_mod O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "list airlines serving between denver and san francisco",
+        "slots": "O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name",
+        "intent": "airline"
+    },
+    {
+        "utterance": "i want to fly from milwaukee to orlando",
+        "slots": "O O O O O B-fromloc.city_name O B-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "show me flights denver to washington on thursday",
+        "slots": "O O O B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "i want to fly from boston to san francisco",
+        "slots": "O O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "show me the flights available from atlanta to baltimore leaving atlanta in the morning",
+        "slots": "O O O O O O B-fromloc.city_name O B-toloc.city_name O B-fromloc.city_name O O B-depart_time.period_of_day",
+        "intent": "flight"
+    },
+    {
+        "utterance": "what type of aircraft leaving after 2 pm from boston to oakland",
+        "slots": "O O O O O B-depart_time.time_relative B-depart_time.time I-depart_time.time O B-fromloc.city_name O B-toloc.city_name",
+        "intent": "aircraft"
+    },
+    {
+        "utterance": "tell me about flights from atlanta to charlotte north carolina leaving on monday and arriving in charlotte",
+        "slots": "O O O O O B-fromloc.city_name O B-toloc.city_name B-toloc.state_name I-toloc.state_name O O B-depart_date.day_name O O O B-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "list flights from denver to san francisco no denver to philadelphia",
+        "slots": "O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O B-fromloc.city_name O B-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "find travel arrangements for a round trip flight from boston to pittsburgh",
+        "slots": "O O O O O B-round_trip I-round_trip O O B-fromloc.city_name O B-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "i 'd like to know the ground travel available in fort worth",
+        "slots": "O O O O O O O O O O B-city_name I-city_name",
+        "intent": "ground_service"
+    },
+    {
+        "utterance": "i need a flight after 6 pm on wednesday from oakland to salt lake city",
+        "slots": "O O O O B-depart_time.time_relative B-depart_time.time I-depart_time.time O B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name I-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "flights from cleveland to kansas city on monday",
+        "slots": "O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O B-depart_date.day_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "show me the flights from dallas to baltimore in first class",
+        "slots": "O O O O O B-fromloc.city_name O B-toloc.city_name O B-class_type I-class_type",
+        "intent": "flight"
+    },
+    {
+        "utterance": "what is the cheapest flight from pittsburgh to atlanta one way",
+        "slots": "O O O B-cost_relative O O B-fromloc.city_name O B-toloc.city_name B-round_trip I-round_trip",
+        "intent": "flight"
+    },
+    {
+        "utterance": "please list all available flights from oakland california to philadelphia on wednesday",
+        "slots": "O O O O O O B-fromloc.city_name B-fromloc.state_name O B-toloc.city_name O B-depart_date.day_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "philadelphia to boston saturday",
+        "slots": "B-fromloc.city_name O B-toloc.city_name B-depart_date.day_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "list all flights from baltimore to philadelphia",
+        "slots": "O O O O B-fromloc.city_name O B-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "what is yyz",
+        "slots": "O O B-airport_code",
+        "intent": "abbreviation"
+    },
+    {
+        "utterance": "i need a return flight from philadelphia to boston",
+        "slots": "O O O O O O B-fromloc.city_name O B-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "do you have a flight from charlotte to atlanta next tuesday",
+        "slots": "O O O O O O B-fromloc.city_name O B-toloc.city_name B-depart_date.date_relative B-depart_date.day_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "show me flights from baltimore to boston",
+        "slots": "O O O O B-fromloc.city_name O B-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "i 'd like to see flights from pittsburgh to atlanta",
+        "slots": "O O O O O O O B-fromloc.city_name O B-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "list all round trip fares from pittsburgh to washington dc",
+        "slots": "O O B-round_trip I-round_trip O O B-fromloc.city_name O B-toloc.city_name B-toloc.state_code",
+        "intent": "airfare"
+    },
+    {
+        "utterance": "okay and on may four i would like to go from atlanta to denver leaving early in the morning around 8",
+        "slots": "O O O B-depart_date.month_name B-depart_date.day_number O O O O O O B-fromloc.city_name O B-toloc.city_name O B-depart_time.period_mod O O B-depart_time.period_of_day B-depart_time.time_relative B-depart_time.time",
+        "intent": "flight"
+    },
+    {
+        "utterance": "what are the flights from boston to san francisco",
+        "slots": "O O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "what is the cheapest coach flight between dallas and baltimore leaving august tenth",
+        "slots": "O O O B-cost_relative B-class_type O O B-fromloc.city_name O B-toloc.city_name O B-depart_date.month_name B-depart_date.day_number",
+        "intent": "flight"
+    },
+    {
+        "utterance": "what is the cheapest round trip flight from denver to atlanta",
+        "slots": "O O O B-cost_relative B-round_trip I-round_trip O O B-fromloc.city_name O B-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "what are the flights from boston to philadelphia",
+        "slots": "O O O O O B-fromloc.city_name O B-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "i 'd like to fly from boston to baltimore",
+        "slots": "O O O O O O B-fromloc.city_name O B-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "list all american airlines from milwaukee to phoenix on saturday",
+        "slots": "O O B-airline_name I-airline_name O B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "what are my meal options from boston to denver",
+        "slots": "O O O B-meal O O B-fromloc.city_name O B-toloc.city_name",
+        "intent": "meal"
+    },
+    {
+        "utterance": "what is bna",
+        "slots": "O O B-airport_code",
+        "intent": "abbreviation"
+    },
+    {
+        "utterance": "does midwest express serve montreal",
+        "slots": "O B-airline_name O O B-city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "give me flights from denver to baltimore",
+        "slots": "O O O O B-fromloc.city_name O B-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "show me the flights from chicago to indianapolis",
+        "slots": "O O O O O B-fromloc.city_name O B-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "is there an airport limousine at the atlanta airport",
+        "slots": "O O O B-transport_type I-transport_type O O B-airport_name I-airport_name",
+        "intent": "ground_service"
+    },
+    {
+        "utterance": "what time does the earliest flight which goes from atlanta to denver leave",
+        "slots": "O B-flight_time O O B-flight_mod O O O O B-fromloc.city_name O B-toloc.city_name O",
+        "intent": "flight_time"
+    },
+    {
+        "utterance": "show me flights leaving from dallas to baltimore",
+        "slots": "O O O O O B-fromloc.city_name O B-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "american flights from cincinnati to houston",
+        "slots": "B-airline_name O O B-fromloc.city_name O B-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "i would like a flight from atlanta to denver",
+        "slots": "O O O O O O B-fromloc.city_name O B-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "how many first class flights does united have leaving from all cities today",
+        "slots": "O O B-class_type I-class_type O O B-airline_name O O O O O B-depart_date.today_relative",
+        "intent": "quantity"
+    },
+    {
+        "utterance": "list all the takeoffs and landings at general mitchell international",
+        "slots": "O O O O O O O B-airport_name I-airport_name I-airport_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "what are the flights from dallas to baltimore",
+        "slots": "O O O O O B-fromloc.city_name O B-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "i need a flight from san francisco to philadelphia",
+        "slots": "O O O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "i would like an early morning flight from chicago into seattle on june first on continental airline",
+        "slots": "O O O O B-depart_time.period_of_day B-depart_time.period_of_day O O B-fromloc.city_name O B-toloc.city_name O B-depart_date.month_name B-depart_date.day_number O B-airline_name I-airline_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "what are the flights from san francisco to washington dc",
+        "slots": "O O O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name B-toloc.state_code",
+        "intent": "flight"
+    },
+    {
+        "utterance": "show me all the flights from charlotte to cleveland",
+        "slots": "O O O O O O B-fromloc.city_name O B-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "i want to fly from boston to denver and i don 't want any stopovers and i 'd like to fly only during the afternoon",
+        "slots": "O O O O O B-fromloc.city_name O B-toloc.city_name O O O O O O O O O O O O O O O O B-depart_time.period_of_day",
+        "intent": "flight"
+    },
+    {
+        "utterance": "all flights from denver colorado to pittsburgh pennsylvania",
+        "slots": "O O O B-fromloc.city_name B-fromloc.state_name O B-toloc.city_name B-toloc.state_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "i need to go to pittsburgh and denver",
+        "slots": "O O O O O B-toloc.city_name O B-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "what flights are available on sunday to pittsburgh from san francisco",
+        "slots": "O O O O O B-depart_date.day_name O B-toloc.city_name O B-fromloc.city_name I-fromloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "show me a list of all the airlines that offer business class service",
+        "slots": "O O O O O O O O O O B-class_type I-class_type O",
+        "intent": "airline"
+    },
+    {
+        "utterance": "what flights from st. paul to kansas city on friday with a meal",
+        "slots": "O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name I-toloc.city_name O B-depart_date.day_name O O B-meal",
+        "intent": "flight"
+    },
+    {
+        "utterance": "yes i would like to find what flights are available from atlanta to boston on the morning of july seventh",
+        "slots": "O O O O O O O O O O O B-fromloc.city_name O B-toloc.city_name O O B-depart_time.period_of_day O B-depart_date.month_name B-depart_date.day_number",
+        "intent": "flight"
+    },
+    {
+        "utterance": "give me us air flights for next wednesday from cleveland to miami",
+        "slots": "O O B-airline_name I-airline_name O O B-depart_date.date_relative B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "what flights go from san francisco to dallas",
+        "slots": "O O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "where does canadian airlines international fly",
+        "slots": "O O B-airline_name I-airline_name I-airline_name O",
+        "intent": "flight"
+    },
+    {
+        "utterance": "does continental airlines fly from pittsburgh to atlanta",
+        "slots": "O B-airline_name I-airline_name O O B-fromloc.city_name O B-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "show nonstop flights from new york to miami on a tuesday which cost less than 466 dollars one way",
+        "slots": "O B-flight_stop O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O O B-arrive_date.day_name O O B-cost_relative O B-fare_amount I-fare_amount B-round_trip I-round_trip",
+        "intent": "flight"
+    },
+    {
+        "utterance": "is there an american airlines flight in the evening from dallas to san francisco",
+        "slots": "O O O B-airline_name I-airline_name O O O B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "show me flights from boston to washington on monday",
+        "slots": "O O O O B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "show me the flights from pittsburgh to san francisco on friday",
+        "slots": "O O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O B-depart_date.day_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "i 'd like to find a flight from charlotte to las vegas and make a stop in st. louis",
+        "slots": "O O O O O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O O O O B-stoploc.city_name I-stoploc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "what is the cheapest flight from denver to pittsburgh leaving on september twenty eighth",
+        "slots": "O O O B-cost_relative O O B-fromloc.city_name O B-toloc.city_name O O B-depart_date.month_name B-depart_date.day_number I-depart_date.day_number",
+        "intent": "flight"
+    },
+    {
+        "utterance": "i want to fly from milwaukee to orlando on wednesday evening",
+        "slots": "O O O O O B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name B-depart_time.period_of_day",
+        "intent": "flight"
+    },
+    {
+        "utterance": "i 'd like to see flights from baltimore to atlanta that arrive before noon and i 'd like to see flights from denver to atlanta that arrive before noon",
+        "slots": "O O O O O O O B-fromloc.city_name O B-toloc.city_name O O B-arrive_time.time_relative B-arrive_time.time O O O O O O O O B-fromloc.city_name O B-toloc.city_name O O B-arrive_time.time_relative B-arrive_time.time",
+        "intent": "flight"
+    },
+    {
+        "utterance": "pittsburgh to atlanta wednesday",
+        "slots": "B-fromloc.city_name O B-toloc.city_name B-depart_date.day_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "what is restriction ap 57",
+        "slots": "O O O B-restriction_code I-restriction_code",
+        "intent": "abbreviation"
+    },
+    {
+        "utterance": "what is the round trip first class fare on united from boston to san francisco",
+        "slots": "O O O B-round_trip I-round_trip B-class_type I-class_type O O B-airline_name O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name",
+        "intent": "airfare"
+    },
+    {
+        "utterance": "i want to fly from philadelphia to dallas with a stop in atlanta on a breakfast flight",
+        "slots": "O O O O O B-fromloc.city_name O B-toloc.city_name O O O O B-stoploc.city_name O O B-meal_description O",
+        "intent": "flight"
+    },
+    {
+        "utterance": "list all flights leaving denver arriving in seattle on saturday that depart after 1230 pm",
+        "slots": "O O O O B-fromloc.city_name O O B-toloc.city_name O B-arrive_date.day_name O O B-depart_time.time_relative B-depart_time.time I-depart_time.time",
+        "intent": "flight"
+    },
+    {
+        "utterance": "flights from nashville to seattle",
+        "slots": "O O B-fromloc.city_name O B-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "i 'm sorry i want to book a flight from atlanta to denver colorado",
+        "slots": "O O O O O O O O O O B-fromloc.city_name O B-toloc.city_name B-toloc.state_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "show me saturday and sunday 's flights from milwaukee to phoenix on american airlines",
+        "slots": "O O B-depart_date.day_name O B-depart_date.day_name I-depart_date.day_name O O B-fromloc.city_name O B-toloc.city_name O B-airline_name I-airline_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "what type of aircraft leaving philadelphia to dallas",
+        "slots": "O O O O O B-fromloc.city_name O B-toloc.city_name",
+        "intent": "aircraft"
+    },
+    {
+        "utterance": "show me all flights from san francisco to pittsburgh on a monday",
+        "slots": "O O O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O O B-depart_date.day_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "what flights go from philadelphia to san francisco via dallas",
+        "slots": "O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O B-stoploc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "show me airlines between boston and san francisco",
+        "slots": "O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name",
+        "intent": "airline"
+    },
+    {
+        "utterance": "what afternoon flights are available from atlanta to san francisco",
+        "slots": "O B-depart_time.period_of_day O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "please list the rental car information in pittsburgh",
+        "slots": "O O O B-transport_type I-transport_type O O B-city_name",
+        "intent": "ground_service"
+    },
+    {
+        "utterance": "what are the rental car rates in dallas",
+        "slots": "O O O B-transport_type I-transport_type O O B-city_name",
+        "intent": "ground_fare"
+    },
+    {
+        "utterance": "what is the fare going from baltimore to boston one way on november seventh",
+        "slots": "O O O O O O B-fromloc.city_name O B-toloc.city_name B-round_trip I-round_trip O B-depart_date.month_name B-depart_date.day_number",
+        "intent": "airfare"
+    },
+    {
+        "utterance": "is there a united flight from baltimore to san francisco on the morning of august twenty seventh",
+        "slots": "O O O B-airline_name O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O B-depart_time.period_of_day O B-depart_date.month_name B-depart_date.day_number I-depart_date.day_number",
+        "intent": "flight"
+    },
+    {
+        "utterance": "please list all flights between boston and philadelphia operating on sundays",
+        "slots": "O O O O O B-fromloc.city_name O B-toloc.city_name O O B-depart_date.day_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "we 're going from denver to san francisco",
+        "slots": "O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "i would like information on a flight between washington and san francisco with a stopover in dallas",
+        "slots": "O O O O O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O O O B-stoploc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "show me the flights from denver to las vegas",
+        "slots": "O O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "philadelphia to san francisco next week tuesday show the flights",
+        "slots": "B-fromloc.city_name O B-toloc.city_name I-toloc.city_name B-depart_date.date_relative O B-depart_date.day_name O O O",
+        "intent": "flight"
+    },
+    {
+        "utterance": "show me flights between new york city and las vegas on sunday",
+        "slots": "O O O O B-fromloc.city_name I-fromloc.city_name I-fromloc.city_name O B-toloc.city_name I-toloc.city_name O B-depart_date.day_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "how many airlines have flights with service class yn",
+        "slots": "O O O O O O O O B-fare_basis_code",
+        "intent": "quantity"
+    },
+    {
+        "utterance": "what is the earliest flight that i can get from bwi to boston logan",
+        "slots": "O O O B-flight_mod O O O O O O B-fromloc.airport_code O B-toloc.city_name B-toloc.airport_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "what is the least expensive business class flight between atlanta and dallas",
+        "slots": "O O O B-cost_relative I-cost_relative B-class_type I-class_type O O B-fromloc.city_name O B-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "show me all the flights from denver and all the flights from miami that arrive at baltimore around noon",
+        "slots": "O O O O O O B-fromloc.city_name O O O O O B-fromloc.city_name O O O B-toloc.city_name B-arrive_time.time_relative B-arrive_time.time",
+        "intent": "flight"
+    },
+    {
+        "utterance": "okay let 's see do you have a flight on delta airline from atlanta to boston",
+        "slots": "O O O O O O O O O O B-airline_name I-airline_name O B-fromloc.city_name O B-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "show me all flights from miami to new york",
+        "slots": "O O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "on august thirtieth please schedule me on a flight from denver to san francisco early in the morning",
+        "slots": "O B-depart_date.month_name B-depart_date.day_number O O O O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name B-depart_time.period_mod O O B-depart_time.period_of_day",
+        "intent": "flight"
+    },
+    {
+        "utterance": "show me flights from baltimore to philadelphia",
+        "slots": "O O O O B-fromloc.city_name O B-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "list all round trip fares from st. petersburg to washington",
+        "slots": "O O B-round_trip I-round_trip O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name",
+        "intent": "airfare"
+    },
+    {
+        "utterance": "please list the friday flights from houston to milwaukee on american airlines in the evening",
+        "slots": "O O O B-depart_date.day_name O O B-fromloc.city_name O B-toloc.city_name O B-airline_name I-airline_name O O B-depart_time.period_of_day",
+        "intent": "flight"
+    },
+    {
+        "utterance": "list evening flights tomorrow from phoenix to detroit",
+        "slots": "O B-depart_time.period_of_day O B-depart_date.today_relative O B-fromloc.city_name O B-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "how can i get from boston to atlanta and back in the same day and have the most hours on the ground in atlanta",
+        "slots": "O O O O O B-fromloc.city_name O B-toloc.city_name O O O O O B-return_date.date_relative O O O O O O O O O B-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "how can i get from indianapolis to montreal in the evening",
+        "slots": "O O O O O B-fromloc.city_name O B-toloc.city_name O O B-depart_time.period_of_day",
+        "intent": "flight"
+    },
+    {
+        "utterance": "i want to fly from boston to dallas",
+        "slots": "O O O O O B-fromloc.city_name O B-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "philadelphia to dallas arriving before 1 in the afternoon",
+        "slots": "B-fromloc.city_name O B-toloc.city_name O B-arrive_time.time_relative B-arrive_time.time O O B-arrive_time.period_of_day",
+        "intent": "flight"
+    },
+    {
+        "utterance": "what are the flights from indianapolis to san diego on wednesday the twelfth",
+        "slots": "O O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O B-depart_date.day_name O B-depart_date.day_number",
+        "intent": "flight"
+    },
+    {
+        "utterance": "flights from pittsburgh to baltimore arriving between 4 and 5 pm",
+        "slots": "O O B-fromloc.city_name O B-toloc.city_name O O B-arrive_time.start_time O B-arrive_time.end_time I-arrive_time.end_time",
+        "intent": "flight"
+    },
+    {
+        "utterance": "find the cheapest one way fare from boston to oakland",
+        "slots": "O O B-cost_relative B-round_trip I-round_trip O O B-fromloc.city_name O B-toloc.city_name",
+        "intent": "airfare"
+    },
+    {
+        "utterance": "i 'd like to know if you have any flights from denver to philadelphia",
+        "slots": "O O O O O O O O O O O B-fromloc.city_name O B-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "can you list all flights from toronto to san diego",
+        "slots": "O O O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "what is mco",
+        "slots": "O O B-airport_code",
+        "intent": "abbreviation"
+    },
+    {
+        "utterance": "i want information on flights from atlanta to washington dc i want to leave wednesday after 4 pm or thursday before 9 am",
+        "slots": "O O O O O O B-fromloc.city_name O B-toloc.city_name B-toloc.state_code O O O O B-depart_date.day_name B-depart_time.time_relative B-depart_time.time I-depart_time.time B-or B-depart_date.day_name B-depart_time.time_relative B-depart_time.time I-depart_time.time",
+        "intent": "flight"
+    },
+    {
+        "utterance": "information on american airline flights from washington to philadelphia early morning times of flight",
+        "slots": "O O B-airline_name I-airline_name O O B-fromloc.city_name O B-toloc.city_name B-depart_time.period_of_day B-depart_time.period_of_day B-flight_time I-flight_time I-flight_time",
+        "intent": "flight"
+    },
+    {
+        "utterance": "what is ewr",
+        "slots": "O O B-airport_code",
+        "intent": "abbreviation"
+    },
+    {
+        "utterance": "i need to catch an evening flight from boston to philadelphia on august first",
+        "slots": "O O O O O B-depart_time.period_of_day O O B-fromloc.city_name O B-toloc.city_name O B-depart_date.month_name B-depart_date.day_number",
+        "intent": "flight"
+    },
+    {
+        "utterance": "please list ground transport in san francisco",
+        "slots": "O O O O O B-city_name I-city_name",
+        "intent": "ground_service"
+    },
+    {
+        "utterance": "what flights are available from denver to philadelphia on wednesday",
+        "slots": "O O O O O B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "ground transportation in las vegas",
+        "slots": "O O O B-city_name I-city_name",
+        "intent": "ground_service"
+    },
+    {
+        "utterance": "show me the flights from denver to philadelphia and the flights from pittsburgh to philadelphia",
+        "slots": "O O O O O B-fromloc.city_name O B-toloc.city_name O O O O B-fromloc.city_name O B-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "are there any later flights than 810 pm leaving from milwaukee for tacoma tomorrow evening",
+        "slots": "O O O B-depart_time.time_relative O O B-depart_time.time I-depart_time.time O O B-fromloc.city_name O B-toloc.city_name B-depart_date.today_relative B-depart_time.period_of_day",
+        "intent": "flight"
+    },
+    {
+        "utterance": "i would like to book a flight that goes from memphis to las vegas",
+        "slots": "O O O O O O O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "tell me about flights from charlotte to atlanta next tuesday",
+        "slots": "O O O O O B-fromloc.city_name O B-toloc.city_name B-depart_date.date_relative B-depart_date.day_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "flights from phoenix to las vegas",
+        "slots": "O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "are there any nonstop flights leaving from dallas to baltimore july seventh with who united airlines",
+        "slots": "O O O B-flight_stop O O O B-fromloc.city_name O B-toloc.city_name B-arrive_date.month_name B-arrive_date.day_number O O B-airline_name I-airline_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "show me the flights that leave on thursday mornings from atlanta to washington and include whether meals are offered and what the prices are",
+        "slots": "O O O O O O O B-depart_date.day_name B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name O O O B-meal O O O O O O O",
+        "intent": "flight"
+    },
+    {
+        "utterance": "okay show me all the flights to baltimore",
+        "slots": "O O O O O O O B-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "i am interested in booking an early morning flight from dallas into houston on february twenty second and returning late in the evening of february twenty second",
+        "slots": "O B-depart_time.period_of_day O O O O B-depart_time.period_of_day B-depart_time.period_of_day O O B-fromloc.city_name O B-toloc.city_name O B-depart_date.month_name B-depart_date.day_number I-depart_date.day_number O O O O O B-return_time.period_of_day O B-return_date.month_name B-return_date.day_number I-return_date.day_number",
+        "intent": "flight"
+    },
+    {
+        "utterance": "ground transportation dallas",
+        "slots": "O O B-city_name",
+        "intent": "ground_service"
+    },
+    {
+        "utterance": "what flights are there from atlanta to washington early on thursday mornings",
+        "slots": "O O O O O B-fromloc.city_name O B-toloc.city_name B-depart_time.period_mod O B-depart_date.day_name B-depart_time.period_of_day",
+        "intent": "flight"
+    },
+    {
+        "utterance": "which united airlines flights go through denver",
+        "slots": "O B-airline_name I-airline_name O O O B-stoploc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "what is the earliest flight from washington to atlanta leaving on wednesday september fourth",
+        "slots": "O O O B-flight_mod O O B-fromloc.city_name O B-toloc.city_name O O B-depart_date.day_name B-depart_date.month_name B-depart_date.day_number",
+        "intent": "flight"
+    },
+    {
+        "utterance": "what is the round trip fare on continental 1291 from denver to san francisco and return",
+        "slots": "O O O B-round_trip I-round_trip O O B-airline_name B-flight_number O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O B-round_trip",
+        "intent": "airfare"
+    },
+    {
+        "utterance": "is the american flight 813 from boston to oakland a nonstop flight",
+        "slots": "O O B-airline_name O B-flight_number O B-fromloc.city_name O B-toloc.city_name O B-flight_stop O",
+        "intent": "flight"
+    },
+    {
+        "utterance": "what flights go from atlanta to washington dc on thursday",
+        "slots": "O O O O B-fromloc.city_name O B-toloc.city_name B-toloc.state_code O B-depart_date.day_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "i would like to book an early morning flight from tampa florida to charlotte north carolina on april sixth",
+        "slots": "O O O O O O B-depart_time.period_of_day B-depart_time.period_of_day O O B-fromloc.city_name B-fromloc.state_name O B-toloc.city_name B-toloc.state_name I-toloc.state_name O B-depart_date.month_name B-depart_date.day_number",
+        "intent": "flight"
+    },
+    {
+        "utterance": "what is the earliest flight that has no stops from washington to san francisco on friday",
+        "slots": "O O O B-flight_mod O O O B-flight_stop I-flight_stop O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O B-depart_date.day_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "list all daily flights between boston and oakland using american airlines",
+        "slots": "O O B-flight_days O O B-fromloc.city_name O B-toloc.city_name O B-airline_name I-airline_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "i need to fly leaving philadelphia to atlanta",
+        "slots": "O O O O O B-fromloc.city_name O B-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "show me the flights on delta or twa which go through atlanta",
+        "slots": "O O O O O B-airline_name B-or B-airline_code O O O B-stoploc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "american flights from cincinnati to salt lake city",
+        "slots": "B-airline_name O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name I-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "where do the flights from boston to oakland stop",
+        "slots": "O O O O O B-fromloc.city_name O B-toloc.city_name B-flight_stop",
+        "intent": "airport"
+    },
+    {
+        "utterance": "what flights from st. paul to kansas city on friday with lunch served",
+        "slots": "O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name I-toloc.city_name O B-depart_date.day_name O B-meal_description O",
+        "intent": "flight"
+    },
+    {
+        "utterance": "what are the cheapest one way flights from pittsburgh to atlanta",
+        "slots": "O O O B-cost_relative B-round_trip I-round_trip O O B-fromloc.city_name O B-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "how many cities are served by delta airlines with first class flights",
+        "slots": "O O O O O O B-airline_name I-airline_name O B-class_type I-class_type O",
+        "intent": "quantity"
+    },
+    {
+        "utterance": "what is the least expensive airfare between boston and baltimore",
+        "slots": "O O O B-cost_relative I-cost_relative O O B-fromloc.city_name O B-toloc.city_name",
+        "intent": "airfare"
+    },
+    {
+        "utterance": "i would like to find flights from columbus to minneapolis on monday june fourteenth early in the morning or in the evening sunday june thirteenth thank you",
+        "slots": "O O O O O O O B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name B-depart_date.month_name B-depart_date.day_number B-depart_time.period_mod O O B-depart_time.period_of_day B-or O O B-depart_time.period_of_day B-depart_date.day_name B-depart_date.month_name B-depart_date.day_number O O",
+        "intent": "flight"
+    },
+    {
+        "utterance": "please show me flights from pittsburgh to atlanta on wednesday morning serving breakfast",
+        "slots": "O O O O O B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name B-depart_time.period_of_day O B-meal_description",
+        "intent": "flight"
+    },
+    {
+        "utterance": "show me nonstop flights from miami to new york with coach class fares",
+        "slots": "O O B-flight_stop O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O B-class_type I-class_type O",
+        "intent": "flight"
+    },
+    {
+        "utterance": "please list all flights leaving on thursday morning from new york city to toronto",
+        "slots": "O O O O O O B-depart_date.day_name B-depart_time.period_of_day O B-fromloc.city_name I-fromloc.city_name I-fromloc.city_name O B-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "okay give me the flights that leave denver after 7 pm next monday arriving in boston",
+        "slots": "O O O O O O O B-fromloc.city_name B-depart_time.time_relative B-depart_time.time I-depart_time.time B-depart_date.date_relative B-depart_date.day_name O O B-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "can you list costs of denver rental cars",
+        "slots": "O O O O O B-city_name B-transport_type I-transport_type",
+        "intent": "ground_fare"
+    },
+    {
+        "utterance": "what flights leave from phoenix to nashville on american airlines",
+        "slots": "O O O O B-fromloc.city_name O B-toloc.city_name O B-airline_name I-airline_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "what are the flights from pittsburgh to denver",
+        "slots": "O O O O O B-fromloc.city_name O B-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "show me the northwest flights from detroit to st. petersburg",
+        "slots": "O O O B-airline_name O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "minneapolis to phoenix on monday",
+        "slots": "B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "show me the most expensive fare",
+        "slots": "O O O B-cost_relative I-cost_relative O",
+        "intent": "airfare"
+    },
+    {
+        "utterance": "what is the earliest flight you have leaving boston heading to philadelphia",
+        "slots": "O O O B-flight_mod O O O O B-fromloc.city_name O O B-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "i 'd like to find the earliest flight possible from san francisco to atlanta",
+        "slots": "O O O O O O B-flight_mod O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "what is the earliest flight from memphis to las vegas",
+        "slots": "O O O B-flight_mod O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "from new york to toronto on thursday morning",
+        "slots": "O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name B-depart_time.period_of_day",
+        "intent": "flight"
+    },
+    {
+        "utterance": "i need a flight from chicago to dallas on continental on june fifth",
+        "slots": "O O O O O B-fromloc.city_name O B-toloc.city_name O B-airline_name O B-depart_date.month_name B-depart_date.day_number",
+        "intent": "flight"
+    },
+    {
+        "utterance": "what united airlines flights go through denver",
+        "slots": "O B-airline_name I-airline_name O O O B-stoploc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "all flights from pittsburgh to dallas round trip after 12 pm less than 100",
+        "slots": "O O O B-fromloc.city_name O B-toloc.city_name B-round_trip I-round_trip B-depart_time.time_relative B-depart_time.time I-depart_time.time B-cost_relative O B-fare_amount",
+        "intent": "flight"
+    },
+    {
+        "utterance": "give me the flights from washington dc to philadelphia for december second",
+        "slots": "O O O O O B-fromloc.city_name B-fromloc.state_code O B-toloc.city_name O B-depart_date.month_name B-depart_date.day_number",
+        "intent": "flight"
+    },
+    {
+        "utterance": "show all flights between san francisco and philadelphia for september fifteenth",
+        "slots": "O O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O B-depart_date.month_name B-depart_date.day_number",
+        "intent": "flight"
+    },
+    {
+        "utterance": "flights from pittsburgh to baltimore between 10 am and 2 pm",
+        "slots": "O O B-fromloc.city_name O B-toloc.city_name O B-depart_time.start_time I-depart_time.start_time O B-depart_time.end_time I-depart_time.end_time",
+        "intent": "flight"
+    },
+    {
+        "utterance": "on friday i need to see all flights that leave atlanta and arrive in dallas before 6 pm",
+        "slots": "O B-depart_date.day_name O O O O O O O O B-fromloc.city_name O O O B-toloc.city_name B-arrive_time.time_relative B-arrive_time.time I-arrive_time.time",
+        "intent": "flight"
+    },
+    {
+        "utterance": "what airline is as",
+        "slots": "O O O B-airline_code",
+        "intent": "airline"
+    },
+    {
+        "utterance": "is there one stop with the us air boston leaving at 705 to atlanta",
+        "slots": "O O B-flight_stop I-flight_stop O O B-airline_name I-airline_name B-toloc.city_name O O B-arrive_time.time O B-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "nonstop flights denver to kansas city",
+        "slots": "B-flight_stop O B-toloc.city_name O B-toloc.city_name I-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "please list the flights from kansas city to denver",
+        "slots": "O O O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "in dallas fort worth i would like information on ground transportation",
+        "slots": "O B-city_name I-city_name I-city_name O O O O O O O",
+        "intent": "ground_service"
+    },
+    {
+        "utterance": "what northwest flights stop in denver",
+        "slots": "O B-airline_name O O O B-stoploc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "flights from phoenix to milwaukee",
+        "slots": "O O B-fromloc.city_name O B-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "i 'd also like to see a list of the flights from pittsburgh to atlanta",
+        "slots": "O O O O O O O O O O O O B-fromloc.city_name O B-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "show me all the types of aircraft",
+        "slots": "O O O O O O O",
+        "intent": "aircraft"
+    },
+    {
+        "utterance": "flights from baltimore to philadelphia where the round trip fare is less than 1000 dollars",
+        "slots": "O O B-fromloc.city_name O B-toloc.city_name O O B-round_trip I-round_trip O O B-cost_relative O B-fare_amount I-fare_amount",
+        "intent": "flight"
+    },
+    {
+        "utterance": "show me the flights arriving at love field",
+        "slots": "O O O O O O B-toloc.airport_name I-toloc.airport_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "show flights between toronto and san francisco",
+        "slots": "O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "show me flights from philadelphia to baltimore",
+        "slots": "O O O O B-fromloc.city_name O B-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "flight from ontario to orlando that departs 9 hours before arriving",
+        "slots": "O O B-fromloc.city_name O B-toloc.city_name O O B-depart_time.time O B-depart_time.time_relative O",
+        "intent": "flight"
+    },
+    {
+        "utterance": "what is the most expensive one way fare from boston to atlanta on american airlines",
+        "slots": "O O O B-cost_relative I-cost_relative B-round_trip I-round_trip O O B-fromloc.city_name O B-toloc.city_name O B-airline_name I-airline_name",
+        "intent": "airfare"
+    },
+    {
+        "utterance": "what ground transportation is there in atlanta",
+        "slots": "O O O O O O B-city_name",
+        "intent": "ground_service"
+    },
+    {
+        "utterance": "ground transport in denver",
+        "slots": "O O O B-city_name",
+        "intent": "ground_service"
+    },
+    {
+        "utterance": "show me flights from pittsburgh to philadelphia on wednesday morning",
+        "slots": "O O O O B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name B-depart_time.period_of_day",
+        "intent": "flight"
+    },
+    {
+        "utterance": "please give me round trip fares from baltimore to philadelphia",
+        "slots": "O O O B-round_trip I-round_trip O O B-fromloc.city_name O B-toloc.city_name",
+        "intent": "airfare"
+    },
+    {
+        "utterance": "give me the flights and fares on december twenty seventh from indianapolis to orlando",
+        "slots": "O O O O O O O B-depart_date.month_name B-depart_date.day_number I-depart_date.day_number O B-fromloc.city_name O B-toloc.city_name",
+        "intent": "flight+airfare"
+    },
+    {
+        "utterance": "show me the cheapest flight on june fourteenth arriving in baltimore starting from dallas",
+        "slots": "O O O B-cost_relative O O B-depart_date.month_name B-depart_date.day_number O O B-toloc.city_name O O B-fromloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "what are flights between boston and pittsburgh on august tenth",
+        "slots": "O O O O B-fromloc.city_name O B-toloc.city_name O B-depart_date.month_name B-depart_date.day_number",
+        "intent": "flight"
+    },
+    {
+        "utterance": "show me the flights from san francisco to boston",
+        "slots": "O O O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "pittsburgh to baltimore please on january one",
+        "slots": "B-fromloc.city_name O B-toloc.city_name O O B-depart_date.month_name B-depart_date.day_number",
+        "intent": "flight"
+    },
+    {
+        "utterance": "i 'd like to fly early tomorrow from columbus to minneapolis",
+        "slots": "O O O O O B-depart_time.period_mod B-depart_date.today_relative O B-fromloc.city_name O B-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "what are the flights available in the morning between boston and denver",
+        "slots": "O O O O O O O B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "what are all the flights from boston to dallas",
+        "slots": "O O O O O O B-fromloc.city_name O B-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "please list flights from philadelphia to dallas stopping in atlanta",
+        "slots": "O O O O B-fromloc.city_name O B-toloc.city_name O O B-stoploc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "what limousine service in los angeles",
+        "slots": "O B-transport_type O O B-city_name I-city_name",
+        "intent": "ground_service"
+    },
+    {
+        "utterance": "information on american airlines flight from washington to philadelphia",
+        "slots": "O O B-airline_name I-airline_name O O B-fromloc.city_name O B-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "what 's the earliest flight from boston to bwi that serves lunch",
+        "slots": "O O O B-flight_mod O O B-fromloc.city_name O B-toloc.airport_code O O B-meal_description",
+        "intent": "flight"
+    },
+    {
+        "utterance": "what airlines are ac and as",
+        "slots": "O O O B-airline_code O B-airline_code",
+        "intent": "airline"
+    },
+    {
+        "utterance": "what is the cost of round trip ticket first class between oakland and atlanta",
+        "slots": "O O O O O B-round_trip I-round_trip O B-class_type I-class_type O B-fromloc.city_name O B-toloc.city_name",
+        "intent": "airfare"
+    },
+    {
+        "utterance": "show me all fares from new york to miami leaving on a tuesday",
+        "slots": "O O O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O O O B-depart_date.day_name",
+        "intent": "airfare"
+    },
+    {
+        "utterance": "ground transportation atl to atlanta",
+        "slots": "O O B-airport_code O B-toloc.city_name",
+        "intent": "ground_service"
+    },
+    {
+        "utterance": "what airlines fly between boston and san francisco and stop in denver",
+        "slots": "O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O O B-stoploc.city_name",
+        "intent": "airline"
+    },
+    {
+        "utterance": "find me the earliest flight from boston to denver that serves breakfast",
+        "slots": "O O O B-flight_mod O O B-fromloc.city_name O B-toloc.city_name O O B-meal_description",
+        "intent": "flight"
+    },
+    {
+        "utterance": "please show me airlines with flights from denver to philadelphia",
+        "slots": "O O O O O O O B-fromloc.city_name O B-toloc.city_name",
+        "intent": "airline"
+    },
+    {
+        "utterance": "show all flights leaving monday morning from boston to pittsburgh",
+        "slots": "O O O O B-depart_date.day_name B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "what are the flights between pittsburgh and baltimore on august tenth",
+        "slots": "O O O O O B-fromloc.city_name O B-toloc.city_name O B-depart_date.month_name B-depart_date.day_number",
+        "intent": "flight"
+    },
+    {
+        "utterance": "what is the smallest aircraft available flying from pittsburgh to baltimore arriving on may seventh",
+        "slots": "O O O B-mod O O O O B-fromloc.city_name O B-toloc.city_name O O B-arrive_date.month_name B-arrive_date.day_number",
+        "intent": "aircraft"
+    },
+    {
+        "utterance": "all flights from denver to philadelphia",
+        "slots": "O O O B-fromloc.city_name O B-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "please show me flights from philadelphia to baltimore between 10 am and 2 pm",
+        "slots": "O O O O O B-fromloc.city_name O B-toloc.city_name O B-depart_time.start_time I-depart_time.start_time O B-depart_time.end_time I-depart_time.end_time",
+        "intent": "flight"
+    },
+    {
+        "utterance": "okay could you tell me what flight leaves dallas to san francisco by united airline",
+        "slots": "O O O O O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O B-airline_name I-airline_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "philadelphia to dallas saturday",
+        "slots": "B-fromloc.city_name O B-toloc.city_name B-depart_date.day_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "please give me direct morning flights from pittsburgh to atlanta",
+        "slots": "O O O B-connect B-depart_time.period_of_day O O B-fromloc.city_name O B-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "which airline serves denver pittsburgh and atlanta",
+        "slots": "O O O B-fromloc.city_name B-fromloc.city_name O B-fromloc.city_name",
+        "intent": "airline"
+    },
+    {
+        "utterance": "what are the fares for flights from charlotte to newark on tuesday and wednesday",
+        "slots": "O O O O O O O B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name O B-depart_date.day_name",
+        "intent": "airfare"
+    },
+    {
+        "utterance": "flights from montreal and phoenix to las vegas arriving at the same time",
+        "slots": "O O B-fromloc.city_name O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O O O O",
+        "intent": "flight"
+    },
+    {
+        "utterance": "what flights are there from new york city to las vegas",
+        "slots": "O O O O O B-fromloc.city_name I-fromloc.city_name I-fromloc.city_name O B-toloc.city_name I-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "how much is an economy ticket from washington to san francisco on september thirtieth",
+        "slots": "O O O O B-economy O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O B-depart_date.month_name B-depart_date.day_number",
+        "intent": "airfare"
+    },
+    {
+        "utterance": "list the flights from st. petersburg to toronto",
+        "slots": "O O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "afternoon flights from boston to san francisco please that leave in the afternoon",
+        "slots": "B-depart_time.period_of_day O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O O O O B-depart_time.period_of_day",
+        "intent": "flight"
+    },
+    {
+        "utterance": "what does flight code us mean",
+        "slots": "O O O O B-airline_code O",
+        "intent": "flight"
+    },
+    {
+        "utterance": "do you have a flight from atlanta to boston",
+        "slots": "O O O O O O B-fromloc.city_name O B-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "what is the earliest flight between logan and bwi",
+        "slots": "O O O B-flight_mod O O B-fromloc.airport_name O B-toloc.airport_code",
+        "intent": "flight"
+    },
+    {
+        "utterance": "i need a flight on sunday from long beach to columbus",
+        "slots": "O O O O O B-depart_date.day_name O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "show me the flights from boston to pittsburgh on wednesdays and thursdays",
+        "slots": "O O O O O B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name O B-depart_date.day_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "what is the cheapest fare from washington to san francisco leaving on september thirtieth",
+        "slots": "O O O B-cost_relative O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O B-depart_date.month_name B-depart_date.day_number",
+        "intent": "airfare"
+    },
+    {
+        "utterance": "show me all flights from pittsburgh to philadelphia which arrive before 8 o'clock am on wednesday",
+        "slots": "O O O O O B-fromloc.city_name O B-toloc.city_name O O B-arrive_time.time_relative B-arrive_time.time I-arrive_time.time I-arrive_time.time O B-arrive_date.day_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "please give me all flights from dallas to oakland before noon",
+        "slots": "O O O O O O B-fromloc.city_name O B-toloc.city_name B-depart_time.time_relative B-depart_time.time",
+        "intent": "flight"
+    },
+    {
+        "utterance": "all flights from denver to pittsburgh leaving after 6 pm and before 7 pm",
+        "slots": "O O O B-fromloc.city_name O B-toloc.city_name O B-depart_time.time_relative B-depart_time.time I-depart_time.time O B-depart_time.time_relative B-depart_time.time I-depart_time.time",
+        "intent": "flight"
+    },
+    {
+        "utterance": "what are the flights from cleveland to indianapolis on wednesday may twelfth on either twa delta or continental",
+        "slots": "O O O O O B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name B-depart_date.month_name B-depart_date.day_number O O B-airline_code B-airline_name B-or B-airline_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "i 'd like the earliest flight from dallas to boston",
+        "slots": "O O O O B-flight_mod O O B-fromloc.city_name O B-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "i 'd like to know the earliest flight from boston to atlanta",
+        "slots": "O O O O O O B-flight_mod O O B-fromloc.city_name O B-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "please show me airlines with service from boston to denver",
+        "slots": "O O O O O O O B-fromloc.city_name O B-toloc.city_name",
+        "intent": "airline"
+    },
+    {
+        "utterance": "list flights from atlanta to boston on wednesday afternoon",
+        "slots": "O O O B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name B-depart_time.period_of_day",
+        "intent": "flight"
+    },
+    {
+        "utterance": "show me the flights from dallas to san francisco",
+        "slots": "O O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "show me the flights from denver to baltimore or washington dc that arrive before or around noon",
+        "slots": "O O O O O B-fromloc.city_name O B-toloc.city_name B-or B-toloc.city_name B-toloc.state_code O O B-arrive_time.time_relative B-or B-arrive_time.time_relative B-arrive_time.time",
+        "intent": "flight"
+    },
+    {
+        "utterance": "what are the prices of these flights",
+        "slots": "O O O O O O O",
+        "intent": "airfare"
+    },
+    {
+        "utterance": "what is the cost of united airlines flight 415 from chicago to kansas city thursday night",
+        "slots": "O O O O O B-airline_name I-airline_name O B-flight_number O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name B-depart_date.day_name B-depart_time.period_of_day",
+        "intent": "airfare"
+    },
+    {
+        "utterance": "list all flights going from boston to atlanta after 6 o'clock on wednesday and before 7 o'clock am on thursday",
+        "slots": "O O O O O B-fromloc.city_name O B-toloc.city_name B-depart_time.time_relative B-depart_time.time I-depart_time.time O B-depart_date.day_name O B-depart_time.time_relative B-depart_time.time I-depart_time.time I-depart_time.time O B-depart_date.day_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "please show me fares from denver to san francisco",
+        "slots": "O O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name",
+        "intent": "airfare"
+    },
+    {
+        "utterance": "explain restriction ap 57",
+        "slots": "O O B-restriction_code I-restriction_code",
+        "intent": "abbreviation"
+    },
+    {
+        "utterance": "flight 417 from cincinnati to dallas",
+        "slots": "O B-flight_number O B-fromloc.city_name O B-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "what flights are there from memphis to las vegas",
+        "slots": "O O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "how many flights does delta have with a class of service code f",
+        "slots": "O O O O B-airline_name O O O O O O O B-fare_basis_code",
+        "intent": "quantity"
+    },
+    {
+        "utterance": "i 'd like a first class flight from denver to baltimore on january first",
+        "slots": "O O O O B-class_type I-class_type O O B-fromloc.city_name O B-toloc.city_name O B-depart_date.month_name B-depart_date.day_number",
+        "intent": "flight"
+    },
+    {
+        "utterance": "what flights go from pittsburgh to baltimore after 8 o'clock next wednesday",
+        "slots": "O O O O B-fromloc.city_name O B-toloc.city_name B-depart_time.time_relative B-depart_time.time I-depart_time.time B-depart_date.date_relative B-depart_date.day_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "show united flights between pittsburgh and baltimore",
+        "slots": "O B-airline_name O O B-fromloc.city_name O B-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "what 's the cheapest of the dallas to atlanta flights which are after 2 in the afternoon",
+        "slots": "O O O B-cost_relative O O B-fromloc.city_name O B-toloc.city_name O O O B-depart_time.time_relative B-depart_time.time O O B-depart_time.period_of_day",
+        "intent": "flight"
+    },
+    {
+        "utterance": "what 's the cheapest flight from baltimore to dallas on american",
+        "slots": "O O O B-cost_relative O O B-fromloc.city_name O B-toloc.city_name O B-airline_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "what is the earliest flight leaving denver going to boston",
+        "slots": "O O O B-flight_mod O O B-fromloc.city_name O O B-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "what is the first flight from boston to atlanta and what is the last flight from atlanta to boston",
+        "slots": "O O O B-flight_mod O O B-fromloc.city_name O B-toloc.city_name O O O O B-flight_mod O O B-fromloc.city_name O B-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "show me the first flight that arrives in toronto from cincinnati",
+        "slots": "O O O B-flight_mod O O O O B-toloc.city_name O B-fromloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "give me a flight from tampa to charlotte on sunday",
+        "slots": "O O O O O B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "what flights are there from dallas to pittsburgh on monday morning",
+        "slots": "O O O O O B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name B-depart_time.period_of_day",
+        "intent": "flight"
+    },
+    {
+        "utterance": "what are the flights from boston to san francisco",
+        "slots": "O O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "show me all the flights from boston to denver that serve lunch",
+        "slots": "O O O O O O B-fromloc.city_name O B-toloc.city_name O O B-meal_description",
+        "intent": "flight"
+    },
+    {
+        "utterance": "show me all fares between philadelphia and san francisco that are less than 200 dollars one way",
+        "slots": "O O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O B-cost_relative O B-fare_amount I-fare_amount B-round_trip I-round_trip",
+        "intent": "airfare"
+    },
+    {
+        "utterance": "flights from denver to pittsburgh on thursday",
+        "slots": "O O B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "which airlines fly between boston and pittsburgh",
+        "slots": "O O O O B-fromloc.city_name O B-toloc.city_name",
+        "intent": "airline"
+    },
+    {
+        "utterance": "show me the flights from dallas to baltimore",
+        "slots": "O O O O O B-fromloc.city_name O B-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "please give me the flight times the morning on united airlines for september twentieth from philadelphia to san francisco",
+        "slots": "O O O O B-flight_time I-flight_time O B-depart_time.period_of_day O B-airline_name I-airline_name O B-depart_date.month_name B-depart_date.day_number O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name",
+        "intent": "flight_time"
+    },
+    {
+        "utterance": "i 'd like a flight on american from newark to nashville",
+        "slots": "O O O O O O B-airline_name O B-fromloc.city_name O B-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "what is the fare for flights from denver to atlanta",
+        "slots": "O O O O O O O B-fromloc.city_name O B-toloc.city_name",
+        "intent": "airfare"
+    },
+    {
+        "utterance": "coach class flights on twa from columbus to st. paul",
+        "slots": "B-class_type I-class_type O O B-airline_code O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "phoenix to newark on wednesday",
+        "slots": "B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "what is the fare on american airlines flight 928 from dallas fort worth to boston",
+        "slots": "O O O O O B-airline_name I-airline_name O B-flight_number O B-fromloc.city_name I-fromloc.city_name I-fromloc.city_name O B-toloc.city_name",
+        "intent": "airfare"
+    },
+    {
+        "utterance": "what ground transportation is available in pittsburgh",
+        "slots": "O O O O O O B-city_name",
+        "intent": "ground_service"
+    },
+    {
+        "utterance": "could you please show me all flights from charlotte to milwaukee",
+        "slots": "O O O O O O O O B-fromloc.city_name O B-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "please give me flights available from baltimore to philadelphia",
+        "slots": "O O O O O O B-fromloc.city_name O B-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "list the earliest flights from st. paul to houston",
+        "slots": "O O B-flight_mod O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "how many flights does each airline have with booking class k",
+        "slots": "O O O O O O O O O O B-fare_basis_code",
+        "intent": "quantity"
+    },
+    {
+        "utterance": "show me the airlines that fly from denver to san francisco",
+        "slots": "O O O O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name",
+        "intent": "airline"
+    },
+    {
+        "utterance": "may i have a listing of flights from long beach to columbus ohio on tuesday",
+        "slots": "O O O O O O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name B-toloc.state_name O B-depart_date.day_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "what is the price of a one way fare from boston to denver on continental airlines",
+        "slots": "O O O O O O B-round_trip I-round_trip O O B-fromloc.city_name O B-toloc.city_name O B-airline_name I-airline_name",
+        "intent": "airfare"
+    },
+    {
+        "utterance": "find me the earliest flight from boston to atlanta and the latest return to boston on the same day",
+        "slots": "O O O B-flight_mod O O B-fromloc.city_name O B-toloc.city_name O O B-flight_mod O O B-toloc.city_name O O O B-return_date.date_relative",
+        "intent": "flight"
+    },
+    {
+        "utterance": "what is the seating capacity of a boeing 767",
+        "slots": "O O O O O O O O B-aircraft_code",
+        "intent": "capacity"
+    },
+    {
+        "utterance": "i 'm looking for a flight that goes from ontario to westchester and stops in chicago",
+        "slots": "O O O O O O O O O B-fromloc.city_name O B-toloc.city_name O O O B-stoploc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "give me flights from pittsburgh to baltimore",
+        "slots": "O O O O B-fromloc.city_name O B-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "is there ground transportation in st. louis",
+        "slots": "O O O O O B-city_name I-city_name",
+        "intent": "ground_service"
+    },
+    {
+        "utterance": "what is the cheapest one way fare from any city to another",
+        "slots": "O O O B-cost_relative B-round_trip I-round_trip O O O O O O",
+        "intent": "airfare"
+    },
+    {
+        "utterance": "need a flight from pittsburgh to denver",
+        "slots": "O O O O B-fromloc.city_name O B-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "show me all flights from oakland to philadelphia on saturday which serve a meal",
+        "slots": "O O O O O B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name O O O B-meal",
+        "intent": "flight"
+    },
+    {
+        "utterance": "what is the most expensive flight from dallas to baltimore",
+        "slots": "O O O B-cost_relative I-cost_relative O O B-fromloc.city_name O B-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "show me the flights before 11 am on august second from boston to denver on delta",
+        "slots": "O O O O B-depart_time.time_relative B-depart_time.time I-depart_time.time O B-depart_date.month_name B-depart_date.day_number O B-fromloc.city_name O B-toloc.city_name O B-airline_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "okay and can you tell me for flights departing from dallas to philadelphia the latest flight you would have departing from dallas to philadelphia",
+        "slots": "O O O O O O O O O O B-fromloc.city_name O B-toloc.city_name O B-flight_mod O O O O O O B-fromloc.city_name O B-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "what are the flights from atlanta to boston in the afternoon",
+        "slots": "O O O O O B-fromloc.city_name O B-toloc.city_name O O B-depart_time.period_of_day",
+        "intent": "flight"
+    },
+    {
+        "utterance": "show me the flights leaving from love field",
+        "slots": "O O O O O O B-fromloc.airport_name I-fromloc.airport_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "show me the airlines that fly from san francisco to boston",
+        "slots": "O O O O O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name",
+        "intent": "airline"
+    },
+    {
+        "utterance": "show me ground transportation information for dallas fort worth",
+        "slots": "O O O O O O B-city_name I-city_name I-city_name",
+        "intent": "ground_service"
+    },
+    {
+        "utterance": "tell me about flights from salt lake city to st. petersburg",
+        "slots": "O O O O O B-fromloc.city_name I-fromloc.city_name I-fromloc.city_name O B-toloc.city_name I-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "the cheapest flights between boston and philadelphia which arrive between 3 and 5 o'clock on tuesday",
+        "slots": "O B-cost_relative O O B-fromloc.city_name O B-toloc.city_name O O O B-arrive_time.start_time O B-arrive_time.end_time I-arrive_time.end_time O B-arrive_date.day_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "what is booking class c",
+        "slots": "O O O O B-fare_basis_code",
+        "intent": "abbreviation"
+    },
+    {
+        "utterance": "which is the flight number for the us air flight from philadelphia to boston is it 279 or is it 137338",
+        "slots": "O O O O O O O B-airline_name I-airline_name O O B-fromloc.city_name O B-toloc.city_name O O B-flight_number B-or O O B-flight_number",
+        "intent": "flight_no"
+    },
+    {
+        "utterance": "is there a flight from atlanta to san francisco that stops over in denver",
+        "slots": "O O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O O O B-stoploc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "list flights from cincinnati to san jose friday evening",
+        "slots": "O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name B-depart_date.day_name B-depart_time.period_of_day",
+        "intent": "flight"
+    },
+    {
+        "utterance": "i want a flight from milwaukee to orlando one way leaving after 5 pm on wednesday",
+        "slots": "O O O O O B-fromloc.city_name O B-toloc.city_name B-round_trip I-round_trip O B-depart_time.time_relative B-depart_time.time I-depart_time.time O B-depart_date.day_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "what is the latest flight departing from boston to san francisco",
+        "slots": "O O O B-flight_mod O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "what flights leave phoenix on wednesday evening and arrive in milwaukee",
+        "slots": "O O O B-fromloc.city_name O B-depart_date.day_name B-depart_time.period_of_day O O O B-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "i 'd like to know the information from boston to philadelphia nonstop",
+        "slots": "O O O O O O O O B-fromloc.city_name O B-toloc.city_name B-flight_stop",
+        "intent": "flight"
+    },
+    {
+        "utterance": "i 'd like information on flights between philadelphia and san francisco with a stop in dallas",
+        "slots": "O O O O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O O O B-stoploc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "how many first class flights does united have leaving from all airports today",
+        "slots": "O O B-class_type I-class_type O O B-airline_name O O O O O B-depart_date.today_relative",
+        "intent": "quantity"
+    },
+    {
+        "utterance": "please show me all the flights from indianapolis to san diego tomorrow",
+        "slots": "O O O O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name B-depart_date.today_relative",
+        "intent": "flight"
+    },
+    {
+        "utterance": "what time are the flights from baltimore to san francisco",
+        "slots": "O B-flight_time O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name",
+        "intent": "flight_time"
+    },
+    {
+        "utterance": "i need information on a flight from boston to denver",
+        "slots": "O O O O O O O B-fromloc.city_name O B-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "what are all the flights into atlanta 's airport",
+        "slots": "O O O O O O B-toloc.city_name I-toloc.city_name O",
+        "intent": "flight"
+    },
+    {
+        "utterance": "please list all flights tuesday dallas atlanta",
+        "slots": "O O O O B-depart_date.day_name B-fromloc.city_name B-fromloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "show me ground transportation in boston",
+        "slots": "O O O O O B-city_name",
+        "intent": "ground_service"
+    },
+    {
+        "utterance": "what does ap57 mean",
+        "slots": "O O B-restriction_code O",
+        "intent": "abbreviation"
+    },
+    {
+        "utterance": "list nonstop flights from los angeles to pittsburgh which arrive on monday after 5 pm",
+        "slots": "O B-flight_stop O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O O O B-arrive_date.day_name B-arrive_time.time_relative B-arrive_time.time I-arrive_time.time",
+        "intent": "flight"
+    },
+    {
+        "utterance": "show me all flights from san francisco to boston philadelphia or baltimore",
+        "slots": "O O O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name B-toloc.city_name O B-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "list all the flights that arrive at general mitchell international from various cities",
+        "slots": "O O O O O O O B-toloc.airport_name I-toloc.airport_name I-toloc.airport_name O O O",
+        "intent": "flight"
+    },
+    {
+        "utterance": "flights from newark to tampa on friday on us air",
+        "slots": "O O B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name O B-airline_name I-airline_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "what are the flights from chicago to indianapolis",
+        "slots": "O O O O O B-fromloc.city_name O B-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "great now what i want to find out is on april twentieth from washington to denver do you have a flight least expensive fare around 5 o'clock in the morning",
+        "slots": "O O O O O O O O O O B-depart_date.month_name B-depart_date.day_number O B-fromloc.city_name O B-toloc.city_name O O O O O B-cost_relative I-cost_relative O B-depart_time.time_relative B-depart_time.time I-depart_time.time O O B-depart_time.period_of_day",
+        "intent": "flight"
+    },
+    {
+        "utterance": "what flights go from san francisco to denver on mondays",
+        "slots": "O O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "i would like a flight from philadelphia to dallas arrive dallas about 12 noon",
+        "slots": "O O O O O O B-fromloc.city_name O B-toloc.city_name O B-toloc.city_name B-arrive_time.time_relative B-arrive_time.time I-arrive_time.time",
+        "intent": "flight"
+    },
+    {
+        "utterance": "i 'd like a united airlines flight on wednesday from san francisco to boston",
+        "slots": "O O O O B-airline_name I-airline_name O O B-depart_date.day_name O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "show me all the flights arriving around noon in washington dc from denver",
+        "slots": "O O O O O O B-arrive_time.time_relative B-arrive_time.time O B-toloc.city_name B-toloc.state_code O B-fromloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "does american airlines fly from philadelphia to san francisco",
+        "slots": "O B-airline_name I-airline_name O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "i would like one flight from kansas city to st. paul arriving around dinnertime 6 pm",
+        "slots": "O O O O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name I-toloc.city_name O B-arrive_time.time_relative B-arrive_time.period_of_day O O",
+        "intent": "flight"
+    },
+    {
+        "utterance": "what do you have on monday from dallas fort worth to oakland california",
+        "slots": "O O O O O B-depart_date.day_name O B-fromloc.city_name I-fromloc.city_name I-fromloc.city_name O B-toloc.city_name B-toloc.state_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "show me the cheapest fare from dallas to baltimore",
+        "slots": "O O O B-cost_relative O O B-fromloc.city_name O B-toloc.city_name",
+        "intent": "airfare"
+    },
+    {
+        "utterance": "show me all the flights from denver to las vegas",
+        "slots": "O O O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "list all flights from boston to atlanta before 5 o'clock am on thursday",
+        "slots": "O O O O B-fromloc.city_name O B-toloc.city_name B-depart_time.time_relative B-depart_time.time I-depart_time.time I-depart_time.time O B-depart_date.day_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "show me ground transportation in denver",
+        "slots": "O O O O O B-city_name",
+        "intent": "ground_service"
+    },
+    {
+        "utterance": "show me all flights from chicago to kansas city on thursday june seventeenth arriving in kansas city at around 7 o'clock in the evening",
+        "slots": "O O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O B-depart_date.day_name B-depart_date.month_name B-depart_date.day_number O O B-toloc.city_name I-toloc.city_name O B-arrive_time.time_relative B-arrive_time.time I-arrive_time.time O O B-arrive_time.period_of_day",
+        "intent": "flight"
+    },
+    {
+        "utterance": "show me all nationair flights from toronto",
+        "slots": "O O O B-airline_name O O B-fromloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "i want to fly from philadelphia to dallas to san francisco on monday july eighth",
+        "slots": "O O O O O B-fromloc.city_name O B-toloc.city_name O B-toloc.city_name I-toloc.city_name O B-depart_date.day_name B-depart_date.month_name B-depart_date.day_number",
+        "intent": "flight"
+    },
+    {
+        "utterance": "what ground transportation is available at baltimore",
+        "slots": "O O O O O O B-city_name",
+        "intent": "ground_service"
+    },
+    {
+        "utterance": "i need flight information between atlanta and boston",
+        "slots": "O O O O O B-fromloc.city_name O B-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "flight information between washington and denver on september third",
+        "slots": "O O O B-fromloc.city_name O B-toloc.city_name O B-depart_date.month_name B-depart_date.day_number",
+        "intent": "flight"
+    },
+    {
+        "utterance": "list the nonstop flights on wednesday june second from miami to baltimore arriving in baltimore between 1115 am and 1245 pm",
+        "slots": "O O B-flight_stop O O B-arrive_date.day_name B-arrive_date.month_name B-arrive_date.day_number O B-fromloc.city_name O B-toloc.city_name O O B-toloc.city_name O B-arrive_time.start_time I-arrive_time.start_time O B-arrive_time.end_time I-arrive_time.end_time",
+        "intent": "flight"
+    },
+    {
+        "utterance": "could you please find me the cheapest one way fare from boston to philadelphia",
+        "slots": "O O O O O O B-cost_relative B-round_trip I-round_trip O O B-fromloc.city_name O B-toloc.city_name",
+        "intent": "airfare"
+    },
+    {
+        "utterance": "how much is a round trip first class fare between boston and washington",
+        "slots": "O O O O B-round_trip I-round_trip B-class_type I-class_type O O B-fromloc.city_name O B-toloc.city_name",
+        "intent": "airfare"
+    },
+    {
+        "utterance": "find a flight from boston to washington on monday",
+        "slots": "O O O O B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "how do you get from the airport to downtown dallas please",
+        "slots": "O O O O O O O O O B-toloc.city_name O",
+        "intent": "flight"
+    },
+    {
+        "utterance": "please list all united flights between pittsburgh and baltimore",
+        "slots": "O O O B-airline_name O O B-fromloc.city_name O B-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "show me the morning flights from boston to philadelphia",
+        "slots": "O O O B-depart_time.period_of_day O O B-fromloc.city_name O B-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "flights from new york to miami",
+        "slots": "O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "what 's restriction ap68",
+        "slots": "O O O B-restriction_code",
+        "intent": "restriction"
+    },
+    {
+        "utterance": "show all united flights between boston and philadelphia",
+        "slots": "O O B-airline_name O O B-fromloc.city_name O B-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "find the flights from boston to san francisco leaving after 6 pm",
+        "slots": "O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O B-depart_time.time_relative B-depart_time.time I-depart_time.time",
+        "intent": "flight"
+    },
+    {
+        "utterance": "please show me all the flights from denver to oakland that are nonstop",
+        "slots": "O O O O O O O B-fromloc.city_name O B-toloc.city_name O O B-flight_stop",
+        "intent": "flight"
+    },
+    {
+        "utterance": "list all united flights from boston to san francisco",
+        "slots": "O O B-airline_name O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "show me flights from oakland to dallas on sunday",
+        "slots": "O O O O B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "which airline offers the cheapest rate going from dallas to baltimore on july fourth",
+        "slots": "O O O O B-cost_relative O O O B-fromloc.city_name O B-toloc.city_name O B-depart_date.month_name B-depart_date.day_number",
+        "intent": "airline"
+    },
+    {
+        "utterance": "show me all flights from toronto",
+        "slots": "O O O O O B-fromloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "i would like to fly from atlanta to boston arriving in boston at 5 pm",
+        "slots": "O O O O O O B-fromloc.city_name O B-toloc.city_name O O B-toloc.city_name O B-arrive_time.time I-arrive_time.time",
+        "intent": "flight"
+    },
+    {
+        "utterance": "i 'd like to fly from boston to san francisco could you find me the cheapest fare",
+        "slots": "O O O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O O O O B-cost_relative O",
+        "intent": "flight"
+    },
+    {
+        "utterance": "list all flights from baltimore to philadelphia",
+        "slots": "O O O O B-fromloc.city_name O B-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "i would like to see the flights from denver to philadelphia",
+        "slots": "O O O O O O O O B-fromloc.city_name O B-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "what airlines flies out of atlanta",
+        "slots": "O O O O O B-fromloc.city_name",
+        "intent": "airline"
+    },
+    {
+        "utterance": "can i have a rental car in houston",
+        "slots": "O O O O B-transport_type I-transport_type O B-city_name",
+        "intent": "ground_service"
+    },
+    {
+        "utterance": "locate flights from philadelphia to dallas stopping in hartfield",
+        "slots": "O O O B-fromloc.city_name O B-toloc.city_name O O B-stoploc.airport_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "can you show me the price of a flight to washington from atlanta on thursday morning",
+        "slots": "O O O O O O O O O O B-toloc.city_name O B-fromloc.city_name O B-depart_date.day_name B-depart_time.period_of_day",
+        "intent": "airfare"
+    },
+    {
+        "utterance": "what are the flights from milwaukee to orlando on wednesday",
+        "slots": "O O O O O B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "us 3724 baltimore to philadelphia what is the fare",
+        "slots": "B-airline_code B-flight_number B-fromloc.city_name O B-toloc.city_name O O O O",
+        "intent": "airfare"
+    },
+    {
+        "utterance": "from atlanta to washington dc",
+        "slots": "O B-fromloc.city_name O B-toloc.city_name B-toloc.state_code",
+        "intent": "flight"
+    },
+    {
+        "utterance": "are there any flights from denver to atlanta with stops in pittsburgh",
+        "slots": "O O O O O B-fromloc.city_name O B-toloc.city_name O O O B-stoploc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "and flight from oakland to boston leaving after midnight",
+        "slots": "O O O B-fromloc.city_name O B-toloc.city_name O B-depart_time.time_relative B-depart_time.period_of_day",
+        "intent": "flight"
+    },
+    {
+        "utterance": "leaving washington going to san francisco the latest flight",
+        "slots": "O B-fromloc.city_name O O B-toloc.city_name I-toloc.city_name O B-flight_mod O",
+        "intent": "flight"
+    },
+    {
+        "utterance": "what does us mean",
+        "slots": "O O B-airline_code O",
+        "intent": "abbreviation"
+    },
+    {
+        "utterance": "show me round trip fares from new york to miami",
+        "slots": "O O B-round_trip I-round_trip O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name",
+        "intent": "airfare"
+    },
+    {
+        "utterance": "on the 8 am flight from san francisco to atlanta what type of aircraft is used",
+        "slots": "O O B-depart_time.time I-depart_time.time O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O O O O O O",
+        "intent": "aircraft"
+    },
+    {
+        "utterance": "when does continental fly from philadelphia to denver on sundays",
+        "slots": "B-flight_time O B-airline_name O O B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name",
+        "intent": "flight_time"
+    },
+    {
+        "utterance": "what type of aircraft is used on the flight from atlanta to philadelphia before 12 o'clock noon",
+        "slots": "O O O O O O O O O O B-fromloc.city_name O B-toloc.city_name B-depart_time.time_relative B-depart_time.time I-depart_time.time I-depart_time.time",
+        "intent": "aircraft"
+    },
+    {
+        "utterance": "list the wednesday flights from denver to baltimore arriving in baltimore between 1115 am and 1245 pm",
+        "slots": "O O B-depart_date.day_name O O B-fromloc.city_name O B-toloc.city_name O O B-toloc.city_name O B-arrive_time.start_time I-arrive_time.start_time O B-arrive_time.end_time I-arrive_time.end_time",
+        "intent": "flight"
+    },
+    {
+        "utterance": "what planes does united use",
+        "slots": "O O O B-airline_name O",
+        "intent": "aircraft"
+    },
+    {
+        "utterance": "i need to fly from washington to san francisco but i 'd like to stop over at dallas can you tell me a schedule of flights that will do that",
+        "slots": "O O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O O O O O O O B-stoploc.city_name O O O O O B-flight_time O O O O O O",
+        "intent": "flight"
+    },
+    {
+        "utterance": "yes i need a flight from denver to pittsburgh on july seventh",
+        "slots": "O O O O O O B-fromloc.city_name O B-toloc.city_name O B-depart_date.month_name B-depart_date.day_number",
+        "intent": "flight"
+    },
+    {
+        "utterance": "show me the round trip tickets from baltimore to atlanta",
+        "slots": "O O O B-round_trip I-round_trip O O B-fromloc.city_name O B-toloc.city_name",
+        "intent": "airfare"
+    },
+    {
+        "utterance": "please list the cheapest flight from dallas to baltimore arriving on may seventh",
+        "slots": "O O O B-cost_relative O O B-fromloc.city_name O B-toloc.city_name O O B-arrive_date.month_name B-arrive_date.day_number",
+        "intent": "flight"
+    },
+    {
+        "utterance": "i would like an american airlines flight from cincinnati to burbank leaving this afternoon",
+        "slots": "O O O O B-airline_name I-airline_name O O B-fromloc.city_name O B-toloc.city_name O O B-depart_time.period_of_day",
+        "intent": "flight"
+    },
+    {
+        "utterance": "could you please find me the earliest flight from boston to oakland",
+        "slots": "O O O O O O B-flight_mod O O B-fromloc.city_name O B-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "show me all the one way fares from tacoma to montreal",
+        "slots": "O O O O B-round_trip I-round_trip O O B-fromloc.city_name O B-toloc.city_name",
+        "intent": "airfare"
+    },
+    {
+        "utterance": "what ground transportation is available into washington",
+        "slots": "O O O O O O B-city_name",
+        "intent": "ground_service"
+    },
+    {
+        "utterance": "i need information on flights leaving philadelphia on friday arriving in oakland california",
+        "slots": "O O O O O O B-fromloc.city_name O B-depart_date.day_name O O B-toloc.city_name B-toloc.state_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "show me flights from san francisco to denver after 4 pm",
+        "slots": "O O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name B-depart_time.time_relative B-depart_time.time I-depart_time.time",
+        "intent": "flight"
+    },
+    {
+        "utterance": "what is the earliest flight in the morning leaving boston for baltimore",
+        "slots": "O O O B-flight_mod O O O B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "i need a united airlines flight from denver to baltimore on saturday",
+        "slots": "O O O B-airline_name I-airline_name O O B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "show me the flights from indianapolis to orlando with round trip fares less than 1288",
+        "slots": "O O O O O B-fromloc.city_name O B-toloc.city_name O B-round_trip I-round_trip O B-cost_relative O B-fare_amount",
+        "intent": "flight"
+    },
+    {
+        "utterance": "in flight meal oakland to philadelphia saturday",
+        "slots": "O O B-meal B-fromloc.city_name O B-toloc.city_name B-depart_date.day_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "show me flights from boston to washington leaving july fifteen",
+        "slots": "O O O O B-fromloc.city_name O B-toloc.city_name O B-depart_date.month_name B-depart_date.day_number",
+        "intent": "flight"
+    },
+    {
+        "utterance": "give me the american airlines flights from phoenix to milwaukee on wednesday",
+        "slots": "O O O B-airline_name I-airline_name O O B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "show flights leaving miami to cleveland on us air that leave after noon",
+        "slots": "O O O B-fromloc.city_name O B-toloc.city_name O B-airline_name I-airline_name O O B-depart_time.time_relative B-depart_time.time",
+        "intent": "flight"
+    },
+    {
+        "utterance": "newark to cleveland",
+        "slots": "B-fromloc.city_name O B-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "i want a flight on twa from boston to denver",
+        "slots": "O O O O O B-airline_code O B-fromloc.city_name O B-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "what are the early morning flights from boston to denver",
+        "slots": "O O O B-depart_time.period_of_day B-depart_time.period_of_day O O B-fromloc.city_name O B-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "what airlines service pittsburgh airport",
+        "slots": "O O O B-airport_name I-airport_name",
+        "intent": "airline"
+    },
+    {
+        "utterance": "pittsburgh to denver",
+        "slots": "B-fromloc.city_name O B-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "show me the flights from baltimore to philadelphia",
+        "slots": "O O O O O B-fromloc.city_name O B-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "list all flights from chicago to seattle on continental which depart on saturday and serve meals",
+        "slots": "O O O O B-fromloc.city_name O B-toloc.city_name O B-airline_name O O O B-depart_date.day_name O O B-meal",
+        "intent": "flight"
+    },
+    {
+        "utterance": "i 'd like to find the cheapest one way fare from baltimore to denver",
+        "slots": "O O O O O O B-cost_relative B-round_trip I-round_trip O O B-fromloc.city_name O B-toloc.city_name",
+        "intent": "airfare"
+    },
+    {
+        "utterance": "i need a cheap flight from baltimore to san francisco",
+        "slots": "O O O B-flight_mod O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "ground transportation from airport in boston to downtown boston",
+        "slots": "O O O O O B-fromloc.city_name O O B-toloc.city_name",
+        "intent": "ground_service"
+    },
+    {
+        "utterance": "all flights from boston to philadelphia which show up on tuesday afternoon",
+        "slots": "O O O B-fromloc.city_name O B-toloc.city_name O O O O B-depart_date.day_name B-depart_time.period_of_day",
+        "intent": "flight"
+    },
+    {
+        "utterance": "what is your earliest flight from boston to washington on august twenty seventh",
+        "slots": "O O O B-flight_mod O O B-fromloc.city_name O B-toloc.city_name O B-depart_date.month_name B-depart_date.day_number I-depart_date.day_number",
+        "intent": "flight"
+    },
+    {
+        "utterance": "please list the flights from pittsburgh to baltimore arriving may seventh",
+        "slots": "O O O O O B-fromloc.city_name O B-toloc.city_name O B-arrive_date.month_name B-arrive_date.day_number",
+        "intent": "flight"
+    },
+    {
+        "utterance": "what ground transportation is available in dallas",
+        "slots": "O O O O O O B-city_name",
+        "intent": "ground_service"
+    },
+    {
+        "utterance": "list all the landings at general mitchell international",
+        "slots": "O O O O O B-toloc.airport_name I-toloc.airport_name I-toloc.airport_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "i 'm trying to fly from denver to boston and i want a flight that serves a meal",
+        "slots": "O O O O O O B-fromloc.city_name O B-toloc.city_name O O O O O O O O B-meal",
+        "intent": "flight"
+    },
+    {
+        "utterance": "what is the latest flight from philadelphia to boston",
+        "slots": "O O O B-flight_mod O O B-fromloc.city_name O B-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "i 'd like to fly from tampa to montreal",
+        "slots": "O O O O O O B-fromloc.city_name O B-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "please list all the arriving and departing flights from general mitchell international",
+        "slots": "O O O O O O O O O B-fromloc.airport_name I-fromloc.airport_name I-fromloc.airport_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "i would like an evening flight from pittsburgh to los angeles on june third",
+        "slots": "O O O O B-depart_time.period_of_day O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O B-depart_date.month_name B-depart_date.day_number",
+        "intent": "flight"
+    },
+    {
+        "utterance": "list the flights from baltimore to seattle that stop in minneapolis",
+        "slots": "O O O O B-fromloc.city_name O B-toloc.city_name O O O B-stoploc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "information on round trip flights from pittsburgh to san francisco first class",
+        "slots": "O O B-round_trip I-round_trip O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name B-class_type I-class_type",
+        "intent": "flight"
+    },
+    {
+        "utterance": "flights from cincinnati to los angeles departing after 718 am",
+        "slots": "O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O B-depart_time.time_relative B-depart_time.time I-depart_time.time",
+        "intent": "flight"
+    },
+    {
+        "utterance": "i need information on flights for tuesday leaving baltimore for dallas dallas to boston and boston to baltimore",
+        "slots": "O O O O O O B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name B-fromloc.city_name O B-toloc.city_name O B-fromloc.city_name O B-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "show me the american airline flights leaving phoenix on wednesday and arriving in milwaukee",
+        "slots": "O O O B-airline_name I-airline_name O O B-fromloc.city_name O B-depart_date.day_name O O O B-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "i would like a flight from philadelphia to dallas",
+        "slots": "O O O O O O B-fromloc.city_name O B-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "what are the classes of service on lufthansa",
+        "slots": "O O O O O O O B-airline_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "list flights from pittsburgh to los angeles which leave on thursday after 5 pm",
+        "slots": "O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O O B-depart_date.day_name B-depart_time.time_relative B-depart_time.time I-depart_time.time",
+        "intent": "flight"
+    },
+    {
+        "utterance": "i want a flight on twa from boston to san francisco",
+        "slots": "O O O O O B-airline_code O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "all flights to baltimore after 6 pm",
+        "slots": "O O O B-toloc.city_name B-depart_time.time_relative B-depart_time.time I-depart_time.time",
+        "intent": "flight"
+    },
+    {
+        "utterance": "i would like to leave early in the morning",
+        "slots": "O O O O O B-depart_time.period_mod O O B-depart_time.period_of_day",
+        "intent": "flight"
+    },
+    {
+        "utterance": "what flights go from seattle to boston via minneapolis",
+        "slots": "O O O O B-fromloc.city_name O B-toloc.city_name O B-stoploc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "i would like to find the cheapest one way fare from boston to oakland",
+        "slots": "O O O O O O B-cost_relative B-round_trip I-round_trip O O B-fromloc.city_name O B-toloc.city_name",
+        "intent": "airfare"
+    },
+    {
+        "utterance": "flight from dallas to boston tomorrow",
+        "slots": "O O B-fromloc.city_name O B-toloc.city_name B-depart_date.today_relative",
+        "intent": "flight"
+    },
+    {
+        "utterance": "show me the flights to and from love field",
+        "slots": "O O O O O O O B-fromloc.airport_name I-fromloc.airport_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "instead of denver can i have the same flight from toronto to san diego but stopping in dallas fort worth",
+        "slots": "B-mod O B-fromloc.city_name O O O O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O O B-stoploc.city_name I-stoploc.city_name I-stoploc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "how much is the cheapest flight from denver to pittsburgh with a stop in atlanta",
+        "slots": "O O O O B-cost_relative O O B-fromloc.city_name O B-toloc.city_name O O O O B-stoploc.city_name",
+        "intent": "airfare"
+    },
+    {
+        "utterance": "what does code yn mean",
+        "slots": "O O O B-fare_basis_code O",
+        "intent": "abbreviation"
+    },
+    {
+        "utterance": "what are the flights from denver to pittsburgh",
+        "slots": "O O O O O B-fromloc.city_name O B-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "please show me the flights from boston to san francisco",
+        "slots": "O O O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "give me flights from san francisco to boston on thursday afternoon",
+        "slots": "O O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name B-depart_time.period_of_day",
+        "intent": "flight"
+    },
+    {
+        "utterance": "show me the fare for delta flight 296 from atlanta to philadelphia",
+        "slots": "O O O O O B-airline_name O B-flight_number O B-fromloc.city_name O B-toloc.city_name",
+        "intent": "airfare"
+    },
+    {
+        "utterance": "philadelphia to san francisco monday",
+        "slots": "B-fromloc.city_name O B-toloc.city_name I-toloc.city_name B-depart_date.day_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "what is ewr",
+        "slots": "O O B-airport_code",
+        "intent": "abbreviation"
+    },
+    {
+        "utterance": "what flights are there arriving in chicago on continental after 11 pm",
+        "slots": "O O O O O O B-toloc.city_name O B-airline_name B-arrive_time.time_relative B-arrive_time.time I-arrive_time.time",
+        "intent": "flight"
+    },
+    {
+        "utterance": "i live in denver and i 'd like to make a trip to atlanta",
+        "slots": "O O O B-fromloc.city_name O O O O O O O O O B-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "show me all the us air flights to pittsburgh between 12 and 4 in the afternoon",
+        "slots": "O O O O B-airline_name I-airline_name O O B-toloc.city_name O B-depart_time.start_time O B-depart_time.end_time O O B-depart_time.period_of_day",
+        "intent": "flight"
+    },
+    {
+        "utterance": "give me fares from atlanta to baltimore",
+        "slots": "O O O O B-fromloc.city_name O B-toloc.city_name",
+        "intent": "airfare"
+    },
+    {
+        "utterance": "what are all the flights between san francisco and boston",
+        "slots": "O O O O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "flights from denver to pittsburgh on wednesday",
+        "slots": "O O B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "i 'd like a flight tomorrow from san diego to toronto",
+        "slots": "O O O O O B-depart_date.today_relative O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "show me all flights from boston to denver which arrive in denver wednesday before noon",
+        "slots": "O O O O O B-fromloc.city_name O B-toloc.city_name O O O B-toloc.city_name B-arrive_date.day_name B-arrive_time.time_relative B-arrive_time.time",
+        "intent": "flight"
+    },
+    {
+        "utterance": "does continental fly from boston to san francisco with a stop in denver",
+        "slots": "O B-airline_name O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O O O B-stoploc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "list all flights going from boston to atlanta on wednesday after 6 o'clock pm on wednesday",
+        "slots": "O O O O O B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name B-depart_time.time_relative B-depart_time.time I-depart_time.time I-depart_time.time O B-depart_date.day_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "what are the flights from boston to washington",
+        "slots": "O O O O O B-fromloc.city_name O B-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "what is the cost for a one way trip from pittsburgh to atlanta",
+        "slots": "O O O O O O B-round_trip I-round_trip O O B-fromloc.city_name O B-toloc.city_name",
+        "intent": "airfare"
+    },
+    {
+        "utterance": "what is the fare from boston to san francisco on united airlines flight 21",
+        "slots": "O O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O B-airline_name I-airline_name O B-flight_number",
+        "intent": "airfare"
+    },
+    {
+        "utterance": "what is the last flight out of pittsburgh to boston in the evening on tuesdays",
+        "slots": "O O O B-flight_mod O O O B-fromloc.city_name O B-toloc.city_name O O B-depart_time.period_of_day O B-depart_date.day_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "find me a flight on united from boston to san francisco with a stopover in denver",
+        "slots": "O O O O O B-airline_name O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O O O B-stoploc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "can you show me the cheapest round trip flights between denver and pittsburgh",
+        "slots": "O O O O O B-cost_relative B-round_trip I-round_trip O O B-fromloc.city_name O B-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "list ground transportation options at phoenix",
+        "slots": "O O O O O B-city_name",
+        "intent": "ground_service"
+    },
+    {
+        "utterance": "can you show me what flights are available on december sixteen going from oakland to dallas",
+        "slots": "O O O O O O O O O B-depart_date.month_name B-depart_date.day_number O O B-fromloc.city_name O B-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "show me the flights into love field",
+        "slots": "O O O O O B-toloc.airport_name I-toloc.airport_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "what flights from atlanta to washington",
+        "slots": "O O O B-fromloc.city_name O B-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "what ground transportation is there from denver",
+        "slots": "O O O O O O B-city_name",
+        "intent": "ground_service"
+    },
+    {
+        "utterance": "please show me the flights available from san francisco to pittsburgh on tuesday",
+        "slots": "O O O O O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "what is the first class fare from baltimore to dallas",
+        "slots": "O O O B-class_type I-class_type O O B-fromloc.city_name O B-toloc.city_name",
+        "intent": "airfare"
+    },
+    {
+        "utterance": "show me one way flights from tampa to st. louis departing before 10 am first class",
+        "slots": "O O B-round_trip I-round_trip O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O B-depart_time.time_relative B-depart_time.time I-depart_time.time B-class_type I-class_type",
+        "intent": "flight"
+    },
+    {
+        "utterance": "is there a flight from atlanta to san francisco on november seventh at noon",
+        "slots": "O O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O B-depart_date.month_name B-depart_date.day_number O B-depart_time.time",
+        "intent": "flight"
+    },
+    {
+        "utterance": "what flights are there from new york city to las vegas",
+        "slots": "O O O O O B-fromloc.city_name I-fromloc.city_name I-fromloc.city_name O B-toloc.city_name I-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "give me the latest flight tomorrow on american airlines from milwaukee to tacoma",
+        "slots": "O O O B-flight_mod O B-depart_date.today_relative O B-airline_name I-airline_name O B-fromloc.city_name O B-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "list flights leaving dallas on saturday and arriving in san francisco before 4 pm",
+        "slots": "O O O B-fromloc.city_name O B-depart_date.day_name O O O B-toloc.city_name I-toloc.city_name B-arrive_time.time_relative B-arrive_time.time I-arrive_time.time",
+        "intent": "flight"
+    },
+    {
+        "utterance": "show me all the flights leaving baltimore",
+        "slots": "O O O O O O B-fromloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "what is the cheapest fare for flights from boston to dallas",
+        "slots": "O O O B-cost_relative O O O O B-fromloc.city_name O B-toloc.city_name",
+        "intent": "airfare"
+    },
+    {
+        "utterance": "sure i 'd like to determine what aircraft are use on july seventh leaving from boston and arriving in atlanta on july seventh",
+        "slots": "O O O O O O O O O O O B-depart_date.month_name B-depart_date.day_number O O B-fromloc.city_name O O O B-toloc.city_name O B-arrive_date.month_name B-arrive_date.day_number",
+        "intent": "aircraft"
+    },
+    {
+        "utterance": "show me flights from tampa to st. louis leaving before 10 am",
+        "slots": "O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O B-depart_time.time_relative B-depart_time.time I-depart_time.time",
+        "intent": "flight"
+    },
+    {
+        "utterance": "what flights go from boston to san francisco with a stop in dallas",
+        "slots": "O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O O O B-stoploc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "can you give me the latest flight from atlanta to denver on july seventh",
+        "slots": "O O O O O B-flight_mod O O B-fromloc.city_name O B-toloc.city_name O B-depart_date.month_name B-depart_date.day_number",
+        "intent": "flight"
+    },
+    {
+        "utterance": "round trip fares from pittsburgh to philadelphia under 1000 dollars",
+        "slots": "B-round_trip I-round_trip O O B-fromloc.city_name O B-toloc.city_name B-cost_relative B-fare_amount I-fare_amount",
+        "intent": "airfare"
+    },
+    {
+        "utterance": "do all the flights to oakland land at the same place",
+        "slots": "O O O O O B-toloc.city_name O O O O O",
+        "intent": "flight"
+    },
+    {
+        "utterance": "show flights from baltimore to san francisco between 6 pm and 8 pm on friday",
+        "slots": "O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O B-depart_time.start_time I-depart_time.start_time O B-depart_time.end_time I-depart_time.end_time O B-depart_date.day_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "please give me the flights available from boston to pittsburgh on wednesday of next week",
+        "slots": "O O O O O O O B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name O B-depart_date.date_relative O",
+        "intent": "flight"
+    },
+    {
+        "utterance": "please list all flights from dallas to pittsburgh on july fourth 1991",
+        "slots": "O O O O O B-fromloc.city_name O B-toloc.city_name O B-depart_date.month_name B-depart_date.day_number B-depart_date.year",
+        "intent": "flight"
+    },
+    {
+        "utterance": "i 'd like to go from st. paul to kansas city on friday with a meal",
+        "slots": "O O O O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name I-toloc.city_name O B-depart_date.day_name O O B-meal",
+        "intent": "flight"
+    },
+    {
+        "utterance": "give me the cheapest flight from dallas to baltimore on saturday",
+        "slots": "O O O B-cost_relative O O B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "what is fare code h",
+        "slots": "O O O O B-fare_basis_code",
+        "intent": "abbreviation"
+    },
+    {
+        "utterance": "what is sa",
+        "slots": "O O B-days_code",
+        "intent": "abbreviation"
+    },
+    {
+        "utterance": "show me the flights from pittsburgh to los angeles on thursday",
+        "slots": "O O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O B-depart_date.day_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "flights from washington dc to denver",
+        "slots": "O O B-fromloc.city_name B-fromloc.state_code O B-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "can you rent a car at stapleton international airport in denver",
+        "slots": "O O O O B-transport_type O B-fromloc.airport_name I-fromloc.airport_name I-fromloc.airport_name O B-fromloc.city_name",
+        "intent": "ground_service"
+    },
+    {
+        "utterance": "i live in washington and i would like to make a trip to san francisco can you tell me which airlines connect with those two cities",
+        "slots": "O O O B-fromloc.city_name O O O O O O O O O B-toloc.city_name I-toloc.city_name O O O O O O O O O O O",
+        "intent": "flight"
+    },
+    {
+        "utterance": "show me the flights from denver to philadelphia again",
+        "slots": "O O O O O B-fromloc.city_name O B-toloc.city_name O",
+        "intent": "flight"
+    },
+    {
+        "utterance": "what is the name of the airport at denver",
+        "slots": "O O O O O O O O B-city_name",
+        "intent": "airport"
+    },
+    {
+        "utterance": "denver to atlanta",
+        "slots": "B-fromloc.city_name O B-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "please show me flights from boston to denver with a stopover in philadelphia",
+        "slots": "O O O O O B-fromloc.city_name O B-toloc.city_name O O O O B-stoploc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "give me flights that arrive in baltimore from denver",
+        "slots": "O O O O O O B-toloc.city_name O B-fromloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "show me the flights from boston to san francisco that stop in atlanta",
+        "slots": "O O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O O B-stoploc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "what is the least expensive flight from atlanta to boston",
+        "slots": "O O O B-cost_relative I-cost_relative O O B-fromloc.city_name O B-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "give me flights from denver to baltimore",
+        "slots": "O O O O B-fromloc.city_name O B-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "what is the last flight of the day to leave baltimore for boston",
+        "slots": "O O O B-flight_mod O O O O O O B-fromloc.city_name O B-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "what type of ground transportation is available at philadelphia airport",
+        "slots": "O O O O O O O O B-airport_name I-airport_name",
+        "intent": "ground_service"
+    },
+    {
+        "utterance": "what 's the cheapest flight from dallas to baltimore on december seventeenth",
+        "slots": "O O O B-cost_relative O O B-fromloc.city_name O B-toloc.city_name O B-depart_date.month_name B-depart_date.day_number",
+        "intent": "flight"
+    },
+    {
+        "utterance": "please list the flights from toronto to washington dc",
+        "slots": "O O O O O B-fromloc.city_name O B-toloc.city_name B-toloc.state_code",
+        "intent": "flight"
+    },
+    {
+        "utterance": "please list the shortest one stop flight from ontario california to orlando florida",
+        "slots": "O O O B-flight_mod B-flight_stop I-flight_stop O O B-fromloc.city_name B-fromloc.state_name O B-toloc.city_name B-toloc.state_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "how long does it take to fly from boston to atlanta",
+        "slots": "O O O O O O O O B-fromloc.city_name O B-toloc.city_name",
+        "intent": "distance"
+    },
+    {
+        "utterance": "show me flights from denver to philadelphia",
+        "slots": "O O O O B-fromloc.city_name O B-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "i want to travel from atlanta to baltimore early in the morning first flight",
+        "slots": "O O O O O B-fromloc.city_name O B-toloc.city_name B-depart_time.period_mod O O B-depart_time.period_of_day B-flight_mod O",
+        "intent": "flight"
+    },
+    {
+        "utterance": "list all daily flights between boston and oakland as well as boston and oakland using american airline",
+        "slots": "O O B-flight_days O O B-fromloc.city_name O B-toloc.city_name O O O B-fromloc.city_name O B-toloc.city_name O B-airline_name I-airline_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "show me all the flights from new york to milwaukee",
+        "slots": "O O O O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "what is the airfare for flights from denver to pittsburgh on delta airline",
+        "slots": "O O O O O O O B-fromloc.city_name O B-toloc.city_name O B-airline_name I-airline_name",
+        "intent": "airfare"
+    },
+    {
+        "utterance": "i would like to see flights from denver to philadelphia",
+        "slots": "O O O O O O O B-fromloc.city_name O B-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "how far is it from orlando airport to orlando",
+        "slots": "O O O O O B-fromloc.airport_name I-fromloc.airport_name O B-toloc.city_name",
+        "intent": "distance"
+    },
+    {
+        "utterance": "i would like information on any flights from pittsburgh to san francisco leaving thursday evening",
+        "slots": "O O O O O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O B-depart_date.day_name B-depart_time.period_of_day",
+        "intent": "flight"
+    },
+    {
+        "utterance": "how many seats in a 72s",
+        "slots": "O O O O O B-aircraft_code",
+        "intent": "capacity"
+    },
+    {
+        "utterance": "i need a flight from toronto to san diego with a layover in washington dc on air canada",
+        "slots": "O O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O O O B-stoploc.city_name B-stoploc.state_code O B-airline_name I-airline_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "where is mco",
+        "slots": "O O B-airport_code",
+        "intent": "city"
+    },
+    {
+        "utterance": "what flights are there from minneapolis to chicago",
+        "slots": "O O O O O B-fromloc.city_name O B-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "i would like to fly from boston to denver early in the morning",
+        "slots": "O O O O O O B-fromloc.city_name O B-toloc.city_name B-depart_time.period_mod O O B-depart_time.period_of_day",
+        "intent": "flight"
+    },
+    {
+        "utterance": "flights from nashville to seattle",
+        "slots": "O O B-fromloc.city_name O B-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "what type of aircraft leaves from boston to washington dc at 9 am during a weekday",
+        "slots": "O O O O O O B-fromloc.city_name O B-toloc.city_name B-toloc.state_code O B-depart_time.time I-depart_time.time O O B-flight_mod",
+        "intent": "aircraft"
+    },
+    {
+        "utterance": "the earliest flight from boston to san francisco please that will be serving a meal",
+        "slots": "O B-flight_mod O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O O O O O B-meal",
+        "intent": "flight"
+    },
+    {
+        "utterance": "i would like a flight from philadelphia to san francisco but i would like to stop in dallas",
+        "slots": "O O O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O O O O O O B-stoploc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "from las vegas to phoenix departing in the morning",
+        "slots": "O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O O O B-depart_time.period_of_day",
+        "intent": "flight"
+    },
+    {
+        "utterance": "what is sa",
+        "slots": "O O B-days_code",
+        "intent": "abbreviation"
+    },
+    {
+        "utterance": "list all flights going from boston to atlanta after 6 o'clock pm on wednesday",
+        "slots": "O O O O O B-fromloc.city_name O B-toloc.city_name B-depart_time.time_relative B-depart_time.time I-depart_time.time I-depart_time.time O B-depart_date.day_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "find travel arrangements for a round trip flight from dallas to pittsburgh arriving after 8 pm",
+        "slots": "O O O O O B-round_trip I-round_trip O O B-fromloc.city_name O B-toloc.city_name O B-arrive_time.time_relative B-arrive_time.time I-arrive_time.time",
+        "intent": "flight"
+    },
+    {
+        "utterance": "i am looking to get one air fare from baltimore to san francisco on a 747 leaving august twenty seventh",
+        "slots": "O O O O O O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O B-aircraft_code O B-depart_date.month_name B-depart_date.day_number I-depart_date.day_number",
+        "intent": "airfare"
+    },
+    {
+        "utterance": "how about arrivals for american in atlanta",
+        "slots": "O O O O B-airline_name O B-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "are there any flights from dallas fort worth to boston leaving before 10 am",
+        "slots": "O O O O O B-fromloc.city_name I-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O B-depart_time.time_relative B-depart_time.time I-depart_time.time",
+        "intent": "flight"
+    },
+    {
+        "utterance": "denver to philadelphia monday",
+        "slots": "B-fromloc.city_name O B-toloc.city_name B-depart_date.day_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "how much does it cost to fly on delta from dallas to baltimore",
+        "slots": "O O O O O O O O B-airline_name O B-fromloc.city_name O B-toloc.city_name",
+        "intent": "airfare"
+    },
+    {
+        "utterance": "what does code qw mean",
+        "slots": "O O O B-fare_basis_code O",
+        "intent": "abbreviation"
+    },
+    {
+        "utterance": "show me the cheapest flights from san francisco to boston",
+        "slots": "O O O B-cost_relative O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "show me the earliest flight from boston to san francisco",
+        "slots": "O O O B-flight_mod O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "does twa have a flight from indianapolis to houston arriving at 11 am",
+        "slots": "O B-airline_code O O O O B-fromloc.city_name O B-toloc.city_name O O B-arrive_time.time I-arrive_time.time",
+        "intent": "flight"
+    },
+    {
+        "utterance": "give me the flights from memphis tennessee to charlotte north carolina",
+        "slots": "O O O O O B-fromloc.city_name B-fromloc.state_name O B-toloc.city_name B-toloc.state_name I-toloc.state_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "round trip fares from denver to philadelphia under 1000 dollars and pittsburgh to philadelphia under 1000 dollars",
+        "slots": "B-round_trip I-round_trip O O B-fromloc.city_name O B-toloc.city_name B-cost_relative B-fare_amount I-fare_amount O B-fromloc.city_name O B-toloc.city_name B-cost_relative B-fare_amount I-fare_amount",
+        "intent": "airfare"
+    },
+    {
+        "utterance": "what flights leave from atlanta to boston on june twenty ninth in the afternoon",
+        "slots": "O O O O B-fromloc.city_name O B-toloc.city_name O B-depart_date.month_name B-depart_date.day_number I-depart_date.day_number O O B-depart_time.period_of_day",
+        "intent": "flight"
+    },
+    {
+        "utterance": "i would like a schedule of flights from san francisco to boston on wednesday",
+        "slots": "O O O O B-flight_time O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name",
+        "intent": "flight_time"
+    },
+    {
+        "utterance": "please list the flights from st. paul to kansas city on friday night that serve meals",
+        "slots": "O O O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name I-toloc.city_name O B-depart_date.day_name B-depart_time.period_of_day O O B-meal",
+        "intent": "flight"
+    },
+    {
+        "utterance": "which united airlines flights go through denver",
+        "slots": "O B-airline_name I-airline_name O O O B-stoploc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "san francisco to philadelphia please",
+        "slots": "B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O",
+        "intent": "flight"
+    },
+    {
+        "utterance": "show me all flights from denver to san francisco",
+        "slots": "O O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "what is the fare on november seventh going one way from pittsburgh to philadelphia",
+        "slots": "O O O O O B-depart_date.month_name B-depart_date.day_number O B-round_trip I-round_trip O B-fromloc.city_name O B-toloc.city_name",
+        "intent": "airfare"
+    },
+    {
+        "utterance": "please show me all one way first class flights from indianapolis to memphis",
+        "slots": "O O O O B-round_trip I-round_trip B-class_type I-class_type O O B-fromloc.city_name O B-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "all flights and fares from pittsburgh to dallas round trip after 12 pm less than 1100 dollars",
+        "slots": "O O O O O B-fromloc.city_name O B-toloc.city_name B-round_trip I-round_trip B-depart_time.time_relative B-depart_time.time I-depart_time.time B-cost_relative O B-fare_amount I-fare_amount",
+        "intent": "flight+airfare"
+    },
+    {
+        "utterance": "give me a flight from new york city to las vegas and a flight from memphis to las vegas that arrive at the same time",
+        "slots": "O O O O O B-fromloc.city_name I-fromloc.city_name I-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O O O O O",
+        "intent": "flight"
+    },
+    {
+        "utterance": "does delta airlines fly from boston to washington dc",
+        "slots": "O B-airline_name I-airline_name O O B-fromloc.city_name O B-toloc.city_name B-toloc.state_code",
+        "intent": "flight"
+    },
+    {
+        "utterance": "show me the economy flights from baltimore to dallas",
+        "slots": "O O O B-economy O O B-fromloc.city_name O B-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "ground transport in oakland",
+        "slots": "O O O B-city_name",
+        "intent": "ground_service"
+    },
+    {
+        "utterance": "i need a listing of flights from kansas city missouri to salt lake city utah",
+        "slots": "O O O O O O O B-fromloc.city_name I-fromloc.city_name B-fromloc.state_name O B-toloc.city_name I-toloc.city_name I-toloc.city_name B-toloc.state_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "find a flight between denver and oakland the flight should leave in the afternoon and arrive near 5 pm the flight should also be nonstop",
+        "slots": "O O O O B-fromloc.city_name O B-toloc.city_name O O O O O O B-depart_time.period_of_day O O B-arrive_time.time_relative B-arrive_time.time I-arrive_time.time O O O O O B-flight_stop",
+        "intent": "flight"
+    },
+    {
+        "utterance": "flights from boston flights from philadelphia to boston on monday",
+        "slots": "O O B-fromloc.city_name O O B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "show me round trip first class tickets from new york to miami",
+        "slots": "O O B-round_trip I-round_trip B-class_type I-class_type O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name",
+        "intent": "airfare"
+    },
+    {
+        "utterance": "i would like to find a flight from pittsburgh to boston on wednesday and i have to be in boston by one so i 'd like a flight out of here no later than 11 am",
+        "slots": "O O O O O O O O B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name O O O O O O B-toloc.city_name B-arrive_time.time_relative B-arrive_time.time O O O O O O O O O B-depart_time.time_relative I-depart_time.time_relative I-depart_time.time_relative O O",
+        "intent": "flight"
+    },
+    {
+        "utterance": "please list all flights from dallas to philadelphia on monday",
+        "slots": "O O O O O B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "what flights from miami to indianapolis",
+        "slots": "O O O B-fromloc.city_name O B-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "list the three earliest flights from atlanta to philadelphia on wednesday",
+        "slots": "O O O B-flight_mod O O B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "airline that stands for dl",
+        "slots": "O O O O B-airline_code",
+        "intent": "airline"
+    },
+    {
+        "utterance": "i want to travel from philadelphia to san francisco with a stopover in dallas",
+        "slots": "O O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O O O B-stoploc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "next sunday flights from miami to cleveland after 1200 hours",
+        "slots": "B-depart_date.date_relative B-depart_date.day_name O O B-fromloc.city_name O B-toloc.city_name B-depart_time.time_relative B-depart_time.time I-depart_time.time",
+        "intent": "flight"
+    },
+    {
+        "utterance": "how much time does it take to go between the airport and downtown by ground transportation in dallas",
+        "slots": "O O O O O O O O O O O O O O O O O B-city_name",
+        "intent": "ground_service"
+    },
+    {
+        "utterance": "show me all the flights from philadelphia to san francisco",
+        "slots": "O O O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "i need information on flight from atlanta to denver",
+        "slots": "O O O O O O B-fromloc.city_name O B-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "show me ground transportation in dallas please",
+        "slots": "O O O O O B-city_name O",
+        "intent": "ground_service"
+    },
+    {
+        "utterance": "give me a flight from tampa to charlotte on sunday",
+        "slots": "O O O O O B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "show all flights on united airlines from san francisco to denver to washington dc",
+        "slots": "O O O O B-airline_name I-airline_name O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O B-toloc.city_name B-toloc.state_code",
+        "intent": "flight"
+    },
+    {
+        "utterance": "please list all flights between boston and san francisco nonstop",
+        "slots": "O O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name B-flight_stop",
+        "intent": "flight"
+    },
+    {
+        "utterance": "may i see all nonstop flights from st. petersburg to charlotte",
+        "slots": "O O O O B-flight_stop O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "show me the flights from boston to san francisco on united airlines",
+        "slots": "O O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O B-airline_name I-airline_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "what flights depart newark for tampa on friday",
+        "slots": "O O O B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "please arrange a flight for me from denver to san francisco on us air",
+        "slots": "O O O O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O B-airline_name I-airline_name",
+        "intent": "flight"
+    },
+    {
+        "utterance": "show me all flights and fares from dallas to san francisco",
+        "slots": "O O O O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name",
+        "intent": "flight+airfare"
+    }
+]

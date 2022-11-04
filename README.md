@@ -45,7 +45,7 @@ Implement a neural network that predicts intents and slots in a multitask learni
 
 - [x] download and import datasets
 
-- [x] prepare validation dataset for ATIS (since only SNIPS has it)
+- [x] prepare validation dataset for ATIS (since only SNIPS has it) - ~10% of the train but intents with only one instance remain in training
 
 - [ ] implement baseline methods
 
@@ -56,3 +56,24 @@ Implement a neural network that predicts intents and slots in a multitask learni
 - [ ] data visualization
 
 - [ ] write paper
+
+## Repository content
+data/ATIS & SNIPS: datasets
+
+```
+project
+│   README.md
+│   conllpy: script to evaluate results    
+│
+└───data
+│   └───ATIS
+│   │   test.json
+│   │   train_full.json
+│   │   train.json
+│   │   valid.json
+│   │
+│   └───SNIPS
+│       test.json
+│       train.json
+│       valid.json
+```

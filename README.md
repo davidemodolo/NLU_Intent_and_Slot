@@ -61,7 +61,8 @@ Implement a neural network that predicts intents and slots in a multitask learni
 ```
 project
 │   README.md
-│   conllpy: script to evaluate results    
+│   conll.py: script to evaluate results
+│   modolo_davide.ipynb: python notebook containing the project
 │
 └───data
     └───ATIS

@@ -51,7 +51,7 @@ Implement a neural network that predicts intents and slots in a multitask learni
 
 - [ ] implement architectures from scratch (PyTorch)
 
-- [ ] implement pre-trained models (TensorFlow)
+- [x] implement pre-trained models (TensorFlow) BERT
 
 - [ ] data visualization
 

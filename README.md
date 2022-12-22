@@ -62,7 +62,10 @@ Implement a neural network that predicts intents and slots in a multitask learni
 project
 │   README.md
 │   conll.py: script to evaluate results
-│   modolo_davide.ipynb: python notebook containing the project
+│   modolo_davide.ipynb: python notebook containing the baseline model and some changes (bi-directionality)
+│   pretrainedBERT.ipynb: python notebook containing the BERT model
+│   pretrainedERNIE.ipynb: python notebook containing the ERNIE model
+│   encoder_decoder.ipynb: python notebook containing the E-D model
 │
 └───data
     └───ATIS

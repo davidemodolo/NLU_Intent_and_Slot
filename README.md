@@ -49,7 +49,7 @@ Implement a neural network that predicts intents and slots in a multitask learni
 
 - [x] implement baseline methods
 
-- [ ] implement architectures from scratch (PyTorch)
+- [x] implement architectures from scratch (PyTorch)
 
 - [x] implement pre-trained models (TensorFlow) BERT
 

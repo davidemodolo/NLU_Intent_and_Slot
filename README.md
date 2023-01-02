@@ -51,16 +51,17 @@ Implement a neural network that predicts intents and slots in a multitask learni
 
 - [x] implement architectures from scratch (PyTorch)
 
-- [x] implement pre-trained models (TensorFlow) BERT
+- [x] implement pre-trained models (PyTorch) BERT & ERNIE
 
-- [ ] data visualization
+- [x] data visualization
 
-- [ ] write paper
+- [x] write paper
 
 ## Repository content
 ```
 project
 │   README.md
+│   NLU_Report_Modolo.pdf: report on this project
 │   conll.py: script to evaluate results
 │   modolo_davide.ipynb: python notebook containing the baseline model and some changes (bi-directionality)
 │   pretrainedBERT.ipynb: python notebook containing the BERT model

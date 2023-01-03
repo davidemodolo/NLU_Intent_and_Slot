@@ -66,7 +66,6 @@ project
 │   modolo_davide.ipynb: python notebook containing the baseline model and some changes (bi-directionality)
 │   pretrainedBERT.ipynb: python notebook containing the BERT model
 │   pretrainedERNIE.ipynb: python notebook containing the ERNIE model
-│   encoder_decoder.ipynb: python notebook containing the E-D model
 │
 └───data
     └───ATIS

@@ -63,7 +63,7 @@ project
 │   README.md
 │   NLU_Report_Modolo.pdf: report on this project
 │   conll.py: script to evaluate results
-│   modolo_davide.ipynb: python notebook containing the baseline model and some changes (bi-directionality)
+│   modolo_davide.ipynb: python notebook containing the baseline model, the bi-directional one and ED
 │   pretrainedBERT.ipynb: python notebook containing the BERT model
 │   pretrainedERNIE.ipynb: python notebook containing the ERNIE model
 │
